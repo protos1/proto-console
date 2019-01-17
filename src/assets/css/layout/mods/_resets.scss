@@ -1,0 +1,153 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  &:not([class*="s1-U__mg--bt"]) {
+    margin-bottom: 0;
+  }
+  &:not([class*="s1-U__mg--tp"]) {
+    margin-top: 0;
+  }
+}
+
+input {
+  max-width: 100%;
+}
+
+hr {
+  border-width: 1px 0 0;
+  border-style: solid none none;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Webkit browsers like Safari and Chrome */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input,
+textarea {
+  -webkit-text-fill-color: unset !important;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+}
+
+// .md-card [class].md-subhead, [class].md-card .md-subheading, [class].md-card .md-title {
+//   font-weight: 500;
+// }
+// [class].md-caption {
+//     font-weight:500;
+// }
+// [class].md-body-1, body {
+//     font-weight:500;
+// }
+// [class].md-body-2 {
+//     font-weight:500;
+// }
+// [class].md-subheading {
+//     font-weight:500;
+// }
+// [class].md-title {
+//     font-weight:400;
+// }
+// [class].md-display-1, [class].md-headline {
+//     font-weight:400;
+// }
+// [class].md-display-2 {
+//     font-weight:400;
+// }
+// [class].md-display-3 {
+//     font-weight:400;
+// }
+// [class].md-display-4 {
+//     font-weight:300;
+// }
