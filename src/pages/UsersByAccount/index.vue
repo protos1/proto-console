@@ -40,7 +40,10 @@
                   <div class="s1-U__align-children--center">
                     <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
                     <span class="md-body-2 s1-U__mg--lt4">{{user.Profile}}</span>
-                    <md-button class="md-icon-button s1-U__mg--lt16 md-dense">
+                    <md-button
+                      class="md-icon-button s1-U__mg--lt16 md-dense"
+                      @click="showEditUserProfileShortcutDialog()"
+                    >
                       <md-icon class="s1-loc__md-icon--mini">edit</md-icon>
                     </md-button>
                   </div>
@@ -235,6 +238,39 @@
         </md-tab>
         <md-tab class="s1-U__pd--tp32 s1-U__pd--bt64" id="tab-settings" md-label="Configurações"></md-tab>
       </md-tabs>
+      <md-dialog class="md-elevation-2" :md-active.sync="editUserProfileShortcutDialog">
+        <div class="s1-U__pd16">
+          <div class="s1-U__align-children--center">
+            <md-icon class="md-accent s1-U__mg--rt8 s1-U__flex-shrink-0">account_box</md-icon>
+            <div class="md-title s1-U__full-width">Renan Zózimo</div>
+            <md-button
+              class="md-icon-button s1-U__flex-shrink-0"
+              @click="closeEditUserProfileShortcutDialog()"
+            >
+              <md-icon>close</md-icon>
+            </md-button>
+          </div>
+          <p class="md-caption s1-U__mg--lt32 s1-U__full-width">Administrador</p>
+        </div>
+        <md-divider/>
+        <md-content class="md-scrollbar s1-U__pd16" style="overflow: auto">
+          <div
+            class="s1-U__pd--tp8 s1-U__pd--bt8 s1-U__pd--lt32"
+            v-for="profile in allProfiles"
+            :key="profile.Id"
+          >
+            <md-radio
+              class="s1-U__mg0"
+              v-model="selectedProfile"
+              :value="profile.Id"
+            >{{profile.Name}}</md-radio>
+          </div>
+        </md-content>
+        <md-divider/>
+        <md-dialog-actions class="s1-U__pd16 s1-U__text-align--right">
+          <md-button class="md-raised md-primary">salvar</md-button>
+        </md-dialog-actions>
+      </md-dialog>
     </section>
   </div>
 </template>
@@ -261,7 +297,9 @@ export default {
     currentProfilePage: 0,
     prevCountProfilePage: 0,
     nextCountProfilePage: 0,
-    profileVisualization: "actionsXprofiles"
+    profileVisualization: "actionsXprofiles",
+    editUserProfileShortcutDialog: false,
+    selectedProfile: "profile-1"
   }),
   mounted: function() {
     this.$nextTick(function() {
@@ -298,6 +336,12 @@ export default {
         document
           .getElementById("s1-mezzanine-wrapper")
           .classList.add("mezzanine-is-active");
+    },
+    showEditUserProfileShortcutDialog() {
+      this.editUserProfileShortcutDialog = true;
+    },
+    closeEditUserProfileShortcutDialog() {
+      this.editUserProfileShortcutDialog = false;
     }
   }
 };

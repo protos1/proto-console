@@ -11,65 +11,63 @@
               <md-icon>close</md-icon>
             </md-button>
           </md-card-header>
-          <md-card-content>
-            <md-content class="md-scrollbar">
-              <md-tabs class="md-transparent s1-mezzanine__tab">
-                <md-tab
-                  class="s1-U__pd--tp32 s1-U__pd--bt64"
-                  id="tab-permissions"
-                  md-label="Permissões"
+          <div style="height: calc(100vh - 74px)">
+            <md-tabs class="md-transparent s1-mezzanine__tab s1-U__full-height">
+              <md-tab
+                class="s1-U__pd--tp32 s1-U__pd--bt64"
+                id="tab-permissions"
+                md-label="Permissões"
+              >
+                <div
+                  class="s1-U__align-children--center s1-U__pd--lt16 s1-U__pd--rt16 s1-U__pd--tp8 s1-U__pd--bt8"
+                  v-for="action in profile.Actions"
+                  v-bind:key="action.id"
+                >
+                  <md-icon
+                    class="s1-U__mg--rt16"
+                    :class="action.Active ? 'md-accent' : 's1-U__opacity--54'"
+                  >{{ action.Active ? 'check' : 'block'}}</md-icon>
+                  <p>{{ action.Id }}</p>
+                </div>
+              </md-tab>
+              <md-tab
+                class="s1-U__pd--tp32 s1-U__pd--bt64"
+                id="tab-profile-users"
+                md-label="Usuários"
+              >
+                <md-card
+                  class="s1-U__pd16 s1-U__mg--bt16-force"
+                  v-for="u in profile.Users"
+                  v-bind:key="u.id"
                 >
                   <div
-                    class="s1-U__align-children--center s1-U__pd--lt16 s1-U__pd--rt16 s1-U__pd--tp8 s1-U__pd--bt8"
-                    v-for="action in profile.Actions"
-                    v-bind:key="action.id"
+                    class="s1-U__align-children--center s1-U__justify-content--space-between s1-U__full-width"
                   >
-                    <md-icon
-                      class="s1-U__mg--rt16"
-                      :class="action.Active ? 'md-accent' : 's1-U__opacity--54'"
-                    >{{ action.Active ? 'check' : 'block'}}</md-icon>
-                    <p>{{ action.Id }}</p>
+                    <div class="s1-U__align-children--center" style="width: calc(100% - 40px)">
+                      <md-avatar
+                        class="md-avatar-icon md-primary s1-U__mg--rt8"
+                        style="font-size: 20px"
+                      >{{u.Abbr}}</md-avatar>
+                      <h2 class="md-title s1-U__text-ellipsis s1-U__full-width">{{u.Name}}</h2>
+                    </div>
+                    <md-button class="md-icon-button s1-U__flex-shrink-0">
+                      <md-icon>more_vert</md-icon>
+                    </md-button>
                   </div>
-                </md-tab>
-                <md-tab
-                  class="s1-U__pd--tp32 s1-U__pd--bt64"
-                  id="tab-profile-users"
-                  md-label="Usuários"
-                >
-                  <md-card
-                    class="s1-U__pd16 s1-U__mg--bt16-force"
-                    v-for="u in profile.Users"
-                    v-bind:key="u.id"
-                  >
-                    <div
-                      class="s1-U__align-children--center s1-U__justify-content--space-between s1-U__full-width"
-                    >
-                      <div class="s1-U__align-children--center" style="width: calc(100% - 40px)">
-                        <md-avatar
-                          class="md-avatar-icon md-primary s1-U__mg--rt8"
-                          style="font-size: 20px"
-                        >{{u.Abbr}}</md-avatar>
-                        <h2 class="md-title s1-U__text-ellipsis s1-U__full-width">{{u.Name}}</h2>
-                      </div>
-                      <md-button class="md-icon-button s1-U__flex-shrink-0">
-                        <md-icon>more_vert</md-icon>
+                  <div class="s1-U__mg--tp8 s1-U__pd--lt48">
+                    <p class="md-caption">PERFIL DE ACESSO</p>
+                    <div class="s1-U__align-children--center">
+                      <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
+                      <span class="md-body-2 s1-U__mg--lt4">{{u.Profile}}</span>
+                      <md-button class="md-icon-button s1-U__mg--lt16 md-dense">
+                        <md-icon class="s1-loc__md-icon--mini">edit</md-icon>
                       </md-button>
                     </div>
-                    <div class="s1-U__mg--tp8 s1-U__pd--lt48">
-                      <p class="md-caption">PERFIL DE ACESSO</p>
-                      <div class="s1-U__align-children--center">
-                        <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
-                        <span class="md-body-2 s1-U__mg--lt4">{{u.Profile}}</span>
-                        <md-button class="md-icon-button s1-U__mg--lt16 md-dense">
-                          <md-icon class="s1-loc__md-icon--mini">edit</md-icon>
-                        </md-button>
-                      </div>
-                    </div>
-                  </md-card>
-                </md-tab>
-              </md-tabs>
-            </md-content>
-          </md-card-content>
+                  </div>
+                </md-card>
+              </md-tab>
+            </md-tabs>
+          </div>
         </md-card>
       </div>
     </div>
@@ -172,8 +170,17 @@ export default {
 </script>
 
 <style lang="scss">
-.s1-mezzanine__tab .md-content.md-tabs-content {
-  overflow: visible !important;
+.s1-mezzanine__tab {
+  [class].md-tabs-content {
+    overflow-x: hidden !important;
+    height: 100% !important;
+  }
+  .md-tabs-navigation {
+    flex-shrink: 0;
+  }
+  .md-tab {
+    height: 100%;
+  }
 }
 .s1-loc__my-account-panel {
   position: fixed;
@@ -255,7 +262,3 @@ div.md-field {
   margin-bottom: 16px;
 }
 </style>
-
-
-
-
