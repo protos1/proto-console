@@ -49,7 +49,7 @@
           <div class="md-layout s1-md-layout--mini md-gutter">
             <div class="md-layout-item s1-U__width--210px">
               <md-card>
-                <div class="s1-U__text-align--center s1-U__pd--tp16 s1-U__pd--bt16">
+                <div class="s1-U__text-align--center s1-U__pd--tp32 s1-U__pd--bt32">
                   <img
                     src="https://s1-cdn-brazilsouth.azureedge.net/sales.svg"
                     style="width: 64px; height: 64px"
@@ -80,7 +80,7 @@
 
             <div class="md-layout-item s1-U__width--210px">
               <md-card>
-                <div class="s1-U__text-align--center s1-U__pd--tp16 s1-U__pd--bt16">
+                <div class="s1-U__text-align--center s1-U__pd--tp32 s1-U__pd--bt32">
                   <img
                     src="https://s1-cdn-brazilsouth.azureedge.net/analytics.svg"
                     style="width: 64px; height: 64px"
@@ -137,7 +137,7 @@
           <div class="md-layout s1-md-layout--mini md-gutter">
             <div class="md-layout-item s1-U__width--210px">
               <md-card>
-                <div class="s1-U__text-align--center s1-U__pd--tp16 s1-U__pd--bt16">
+                <div class="s1-U__text-align--center s1-U__pd--tp32 s1-U__pd--bt32">
                   <img
                     src="https://s1-cdn-brazilsouth.azureedge.net/sales.svg"
                     style="width: 64px; height: 64px"

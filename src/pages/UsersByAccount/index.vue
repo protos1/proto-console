@@ -12,7 +12,7 @@
       </h1>
     </header>
     <section>
-      <md-tabs class="md-transparent" md-alignment="right">
+      <md-tabs class="md-transparent">
         <md-tab class="s1-U__pd--tp32 s1-U__pd--bt64" id="tab-users" md-label="Usuários">
           <div class="md-layout md-gutter s1-md-layout--mini">
             <div
@@ -50,7 +50,20 @@
           </div>
         </md-tab>
         <md-tab class="s1-U__pd--tp32 s1-U__pd--bt64" id="tab-profiles" md-label="Perfis">
-          <div class="s1-U__text-align--right s1-U__pd--bt8">
+          <div
+            class="s1-U__pd--tp16 s1-U__pd--bt16 s1-U__align-children--center s1-U__justify-content--space-between"
+          >
+            <div class="s1-loc__md-field-wrapper s1-U__width--180px">
+              <md-field class="s1-U__mg0">
+                <md-select v-model="profileVisualization" name="pv-code" id="pv-code">
+                  <md-option
+                    :value="pv.Id"
+                    v-for="pv in [{ Id: 'actionsXprofiles', Name: 'Ações x Perfis'}, { Id: 'profileList', Name: 'Lista de perfis'}]"
+                    v-bind:key="pv.Id"
+                  >{{pv.Name}}</md-option>
+                </md-select>
+              </md-field>
+            </div>
             <md-button class="md-raised md-primary">
               <div class="s1-U__align-children--center s1-U__pd--rt8">
                 <md-icon class="s1-U__mg--rt4">add</md-icon>
@@ -58,26 +71,21 @@
               </div>
             </md-button>
           </div>
-          <div
-            class="s1-U__pd--tp16 s1-U__pd--bt16 s1-U__align-children--center s1-U__justify-content--space-between"
+          <md-card
+            class="md-table md-theme-default"
+            v-show="profileVisualization == 'actionsXprofiles'"
           >
-            <div>
-              <div class="s1-loc__md-field-wrapper s1-U__width--180px">
+            <div class="s1-U__text-align--right s1-U__pd16">
+              <div
+                class="s1-loc__md-field-wrapper s1-U__width--240px"
+                style="display: inline-block"
+              >
                 <md-field class="s1-U__mg0">
-                  <md-select v-model="profileVisualization" name="pv-code" id="pv-code">
-                    <md-option
-                      :value="pv.Id"
-                      v-for="pv in [{ Id: 'actionsXprofiles', Name: 'Ações x Perfis'}, { Id: 'profileList', Name: 'Lista de perfis'}]"
-                      v-bind:key="pv.Id"
-                    >{{pv.Name}}</md-option>
-                  </md-select>
-                </md-field>
-              </div>
-            </div>
-            <div>
-              <div class="s1-loc__md-field-wrapper s1-U__width--180px">
-                <md-field class="s1-U__mg0">
-                  <md-input class="s1-U__full-width" v-model="search"/>
+                  <md-input
+                    class="s1-U__full-width"
+                    v-model="search"
+                    placeholder="Buscar ações ou perfis"
+                  />
                   <md-button
                     type="submit"
                     class="s1-U__mg0 md-icon-button md-dense squared"
@@ -88,11 +96,6 @@
                 </md-field>
               </div>
             </div>
-          </div>
-          <md-card
-            class="md-table md-theme-default"
-            v-show="profileVisualization == 'actionsXprofiles'"
-          >
             <table class="s1-table-calc">
               <thead>
                 <tr>
@@ -182,7 +185,7 @@
                   >
                     <div class="md-table-cell-container">
                       <md-icon
-                        :class="profile.Actions[action.Name].Active ? 'md-accent' : ''"
+                        :class="profile.Actions[action.Name].Active ? 'md-accent' : 's1-U__opacity--54'"
                       >{{profile.Actions[action.Name].Active ? 'check' : 'block'}}</md-icon>
                     </div>
                   </td>
@@ -191,6 +194,44 @@
               </tbody>
             </table>
           </md-card>
+          <div
+            v-show="profileVisualization == 'profileList'"
+            class="md-layout md-gutter s1-md-layout--mini"
+          >
+            <div
+              class="md-layout-item md-xsmall-size-100 md-small-size-100 md-medium-size-50 md-large-size-33 md-xlarge-size-25 s1-U__mg--bt16"
+              v-for="profile in allProfiles"
+              v-bind:key="profile.Id + '-zuasdajsk'"
+            >
+              <md-card>
+                <div class="s1-U__pd16">
+                  <div class="s1-U__align-children--center s1-U__justify-content--space-between">
+                    <div class="s1-U__align-children--center">
+                      <md-icon class="s1-U__mg--rt8 md-primary">account_box</md-icon>
+                      <p class="md-subheading">{{profile.Name}}</p>
+                    </div>
+                    <md-menu md-direction="bottom-end">
+                      <md-button class="md-dense squared md-icon-button" md-menu-trigger>
+                        <md-icon>more_vert</md-icon>
+                      </md-button>
+
+                      <md-menu-content>
+                        <md-menu-item>Editar</md-menu-item>
+                        <md-menu-item @click="openMezzanine()">Ver detalhes</md-menu-item>
+                      </md-menu-content>
+                    </md-menu>
+                  </div>
+                  <div class="s1-U__pd--lt32">
+                    <p
+                      class="md-caption"
+                      v-if="profile.Users.length > 0"
+                    >{{profile.Users.length}} Usuários</p>
+                    <p class="md-caption" v-else>Nenhum usuário</p>
+                  </div>
+                </div>
+              </md-card>
+            </div>
+          </div>
         </md-tab>
         <md-tab class="s1-U__pd--tp32 s1-U__pd--bt64" id="tab-settings" md-label="Configurações"></md-tab>
       </md-tabs>
@@ -215,6 +256,7 @@ export default {
     search: "",
     users: Users,
     profiles: Profiles,
+    allProfiles: Profiles,
     actions: Actions,
     currentProfilePage: 0,
     prevCountProfilePage: 0,
@@ -224,12 +266,6 @@ export default {
   mounted: function() {
     this.$nextTick(function() {
       this.newColumns(0);
-      // console.log(this.calcTable());
-      // console.log(Profiles.length);
-      // console.log(this.newColumns(0));
-      // console.log(this.newColumns(1));
-      // console.log(this.newColumns(2));
-      // console.log(this.newColumns(3));
     });
   },
   methods: {
@@ -256,6 +292,12 @@ export default {
     },
     setPrevPage() {
       this.newColumns(this.currentProfilePage - 1);
+    },
+    openMezzanine() {
+      document.getElementById("s1-mezzanine-wrapper") &&
+        document
+          .getElementById("s1-mezzanine-wrapper")
+          .classList.add("mezzanine-is-active");
     }
   }
 };

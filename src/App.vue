@@ -5,8 +5,7 @@
         <md-card style="border-radius: 0">
           <md-card-header class="s1-U__border--bottom1 s1-U__pd--lt20">
             <md-card-header-text>
-              <p class="md-subheading s1-U__text-color--dark-2 s1-U__text-ellipsis">RENAN Z LTDA</p>
-              <p class="md-title s1-U__text-ellipsis">RZ Produções</p>
+              <p class="md-title s1-U__text-ellipsis">Administrador</p>
             </md-card-header-text>
             <md-button class="md-icon-button" @click="closeMezzanine()">
               <md-icon>close</md-icon>
@@ -14,127 +13,63 @@
           </md-card-header>
           <md-card-content>
             <md-content class="md-scrollbar">
-              <section>
-                <div class="md-layout s1-U__pd--lt16">
-                  <div class="md-layout-item md-size-60">
-                    <div class="s1-logo__wrapper md-elevation-1">
-                      <img class="s1-logo__img" src="rz-logo.png" alt>
-                    </div>
+              <md-tabs class="md-transparent s1-mezzanine__tab">
+                <md-tab
+                  class="s1-U__pd--tp32 s1-U__pd--bt64"
+                  id="tab-permissions"
+                  md-label="Permissões"
+                >
+                  <div
+                    class="s1-U__align-children--center s1-U__pd--lt16 s1-U__pd--rt16 s1-U__pd--tp8 s1-U__pd--bt8"
+                    v-for="action in profile.Actions"
+                    v-bind:key="action.id"
+                  >
+                    <md-icon
+                      class="s1-U__mg--rt16"
+                      :class="action.Active ? 'md-accent' : 's1-U__opacity--54'"
+                    >{{ action.Active ? 'check' : 'block'}}</md-icon>
+                    <p>{{ action.Id }}</p>
                   </div>
-                </div>
-              </section>
-              <section class="s1-U__mg--tp24">
-                <div class="s1-U__pd--lt16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">NOME</p>
-                  <p class="s1-U__text-ellipsis">Renan Z Ltda</p>
-                </div>
-                <div class="s1-U__pd--lt16 s1-U__mg--tp16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">NOME FANTASIA</p>
-                  <p class="s1-U__text-ellipsis">RZ Produções</p>
-                </div>
-                <div class="s1-U__pd--lt16 s1-U__mg--tp16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">DOC CNPJ</p>
-                  <p class="s1-U__text-ellipsis">2345 6782 3456 78</p>
-                </div>
-              </section>
-              <md-divider class="s1-U__mg--tp32 s1-U__mg--bt32"/>
-              <section>
-                <h3 class="md-title s1-U__mg--bt16 s1-U__text-color--primary">Localização</h3>
-                <div class="s1-U__pd--lt16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">PAÍS</p>
-                  <p class="s1-U__text-ellipsis">Brasil</p>
-                </div>
-                <div class="s1-U__pd--lt16 s1-U__mg--tp16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">IDIOMA</p>
-                  <p class="s1-U__text-ellipsis">Português brasileiro</p>
-                </div>
-              </section>
-              <md-divider class="s1-U__mg--tp32 s1-U__mg--bt32"/>
-              <section>
-                <h3 class="md-title s1-U__mg--bt16 s1-U__text-color--primary">Contato</h3>
-                <div class="s1-U__pd--lt16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">TELEFONE 1</p>
-                  <p class="s1-U__text-ellipsis">31 9 8848 0863</p>
-                </div>
-                <div class="s1-U__pd--lt16 s1-U__mg--tp16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">TELEFONE 2</p>
-                  <p class="s1-U__text-ellipsis">31 9 9925 5212</p>
-                </div>
-                <div class="s1-U__pd--lt16 s1-U__mg--tp16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">E-MAIL</p>
-                  <p class="s1-U__text-ellipsis">contato@rzp.com.br</p>
-                </div>
-              </section>
-              <md-divider class="s1-U__mg--tp32 s1-U__mg--bt32"/>
-              <section>
-                <h3 class="md-title s1-U__mg--bt16 s1-U__text-color--primary">Sistema</h3>
-                <div class="s1-U__pd--lt16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">DNS</p>
-                  <p class="s1-U__text-ellipsis s1-U__align-children--center">
-                    <span class="s1-U__mg--rt16">https://renanzozimo.github.io</span>
-                    <a href="https://renanzozimo.github.io" target="_blank">
-                      <md-icon>link</md-icon>
-                    </a>
-                  </p>
-                </div>
-                <div class="s1-U__pd--lt16 s1-U__mg--tp16">
-                  <p class="md-caption s1-U__text-color--dark-2 s1-U__text-ellipsis">DOMÍNIO</p>
-                  <p class="s1-U__text-ellipsis">@rzprods</p>
-                </div>
-                <div class="s1-U__pd--lt16 s1-U__mg--tp24 s1-U__align-children--center">
-                  <md-icon class="s1-U__mg--rt16">check</md-icon>
-                  <p class="s1-U__text-ellipsis">Permite recuperação de senha</p>
-                </div>
-                <div class="s1-U__pd--lt16 s1-U__mg--tp16 s1-U__align-children--center">
-                  <md-icon class="s1-U__mg--rt16">close</md-icon>
-                  <p class="s1-U__text-ellipsis">Não permite autenticação em duas vias</p>
-                </div>
-              </section>
-              <md-divider class="s1-U__mg--tp32 s1-U__mg--bt32"/>
-              <section>
-                <h3 class="md-title s1-U__mg--bt16 s1-U__text-color--primary">Usuário proprietário</h3>
-                <div class="s1-U__pd--lt16">
-                  <p class="md-title s1-U__text-ellipsis">Admin Zózimo</p>
-                  <p class="s1-U__text-ellipsis">admin@rzprods</p>
-                  <p class="s1-U__text-ellipsis">contato@rzp.com.br</p>
-                </div>
-              </section>
+                </md-tab>
+                <md-tab
+                  class="s1-U__pd--tp32 s1-U__pd--bt64"
+                  id="tab-profile-users"
+                  md-label="Usuários"
+                >
+                  <md-card
+                    class="s1-U__pd16 s1-U__mg--bt16-force"
+                    v-for="u in profile.Users"
+                    v-bind:key="u.id"
+                  >
+                    <div
+                      class="s1-U__align-children--center s1-U__justify-content--space-between s1-U__full-width"
+                    >
+                      <div class="s1-U__align-children--center" style="width: calc(100% - 40px)">
+                        <md-avatar
+                          class="md-avatar-icon md-primary s1-U__mg--rt8"
+                          style="font-size: 20px"
+                        >{{u.Abbr}}</md-avatar>
+                        <h2 class="md-title s1-U__text-ellipsis s1-U__full-width">{{u.Name}}</h2>
+                      </div>
+                      <md-button class="md-icon-button s1-U__flex-shrink-0">
+                        <md-icon>more_vert</md-icon>
+                      </md-button>
+                    </div>
+                    <div class="s1-U__mg--tp8 s1-U__pd--lt48">
+                      <p class="md-caption">PERFIL DE ACESSO</p>
+                      <div class="s1-U__align-children--center">
+                        <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
+                        <span class="md-body-2 s1-U__mg--lt4">{{u.Profile}}</span>
+                        <md-button class="md-icon-button s1-U__mg--lt16 md-dense">
+                          <md-icon class="s1-loc__md-icon--mini">edit</md-icon>
+                        </md-button>
+                      </div>
+                    </div>
+                  </md-card>
+                </md-tab>
+              </md-tabs>
             </md-content>
           </md-card-content>
-          <md-card-actions class="s1-U__border--top1">
-            <div
-              class="s1-U__align-children--center s1-U__justify-content--space-between s1-U__full-width"
-            >
-              <md-menu md-direction="top-start">
-                <md-button
-                  class="md-icon-button md-primary s1-md-bordered md-dense squared"
-                  md-menu-trigger
-                >
-                  <md-icon>more_vert</md-icon>
-                </md-button>
-
-                <md-menu-content>
-                  <md-menu-item
-                    @click="toggleApplicationsDialog(company.fantasyName)"
-                  >Gerenciar aplicações</md-menu-item>
-                  <md-menu-item @click="showOwnerOptions = true">Gerenciar usuário proprietário</md-menu-item>
-                  <md-divider class="s1-U__mg--tp8 s1-U__mg--bt8"/>
-                  <md-menu-item>
-                    <span>Contas</span>
-                    <md-icon>open_in_new</md-icon>
-                  </md-menu-item>
-                  <md-menu-item>
-                    <span>Usuários</span>
-                    <md-icon>open_in_new</md-icon>
-                  </md-menu-item>
-                </md-menu-content>
-              </md-menu>
-              <md-button
-                class="s1-md-bordered md-primary s1-U__mg--rt8"
-                @click="setActivePage('edit-company')"
-              >Editar dados</md-button>
-            </div>
-          </md-card-actions>
         </md-card>
       </div>
     </div>
@@ -195,6 +130,7 @@ import Home from "./pages/Home/index";
 import AllMyAccounts from "./pages/AllMyAccounts/index";
 import MyAccountPanel from "./components/MyAccountPanel/index";
 import UsersByAccount from "./pages/UsersByAccount/index";
+import Profiles from "./data/_profiles.js";
 
 export default {
   name: "app",
@@ -202,7 +138,8 @@ export default {
     menuVisible: false,
     activePage: "all-my-accounts",
     activeAccount: "",
-    activeApp: ""
+    activeApp: "",
+    profile: Profiles[0]
   }),
   components: {
     Home,
@@ -235,6 +172,9 @@ export default {
 </script>
 
 <style lang="scss">
+.s1-mezzanine__tab .md-content.md-tabs-content {
+  overflow: visible !important;
+}
 .s1-loc__my-account-panel {
   position: fixed;
   right: 24px;
