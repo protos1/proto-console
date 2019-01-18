@@ -241,8 +241,10 @@ export default {
   top: 16px;
   z-index: 2;
 
-  & + .s1-md-app .md-app-container .md-app-content {
-    padding-right: 86px;
+  @media (min-width: 600.1px) {
+    & + .s1-md-app .md-app-container .md-app-content {
+      padding-right: 86px;
+    }
   }
 }
 .mezzanine-is-active {
@@ -276,7 +278,11 @@ export default {
   justify-content: center;
   align-items: center;
 }
-
+.s1-invisible-badge {
+  .md-badge {
+    opacity: 0;
+  }
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 200ms !important;
@@ -291,22 +297,10 @@ export default {
 }
 .s1-loc__container {
   margin: 0 auto;
-  width: 80%;
+  width: 87%;
   max-width: 100%;
 
-  @media (max-width: 1903px) {
-    width: 900px;
-  }
-
-  @media (max-width: 1280px) {
-    width: 750px;
-  }
-
   @media (max-width: 960px) {
-    width: 502px;
-  }
-
-  @media (max-width: 600px) {
     width: 100%;
   }
 }

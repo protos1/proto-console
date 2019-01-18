@@ -38,7 +38,25 @@ export default [
   {
     Id: "user-users-7",
     Name: "Robertinho Au Au",
-    Profile: "Operador",
+    Profile: "Analista 2",
     Abbr: "RA"
+  },
+  {
+    Id: "user-users-8",
+    Name: "Joselito SN",
+    Profile: "Analista 2",
+    Abbr: "JS"
+  },
+  {
+    Id: "user-users-9",
+    Name: "Chegadonho Santos",
+    Profile: "Administrador",
+    Abbr: "CS"
+  },
+  {
+    Id: "user-users-10",
+    Name: "Má Tilde",
+    Profile: "Administrador",
+    Abbr: "MT"
   }
 ];
