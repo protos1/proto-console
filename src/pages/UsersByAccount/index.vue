@@ -8,12 +8,34 @@
         >
           <md-icon>arrow_back</md-icon>
         </md-button>
-        <span>{{activeAccount}} + {{activeApp}}</span>
+        <span>{{activeAccount}} / {{activeApp}}</span>
       </h1>
     </header>
     <section>
       <md-tabs class="md-transparent">
         <md-tab class="s1-U__pd--tp32 s1-U__pd--bt64" id="tab-users" md-label="Usuários">
+          <div
+            class="s1-U__align-children--center s1-U__justify-content--space-between s1-U__mg--bt16"
+          >
+            <div class="s1-loc__md-field-wrapper s1-U__width--240px" style="display: inline-block">
+              <md-field class="s1-U__mg0">
+                <md-input class="s1-U__full-width" v-model="search" placeholder="Buscar usuários"/>
+                <md-button
+                  type="submit"
+                  class="s1-U__mg0 md-icon-button md-dense squared"
+                  style=" margin-top: -2px; margin-right: 2px;"
+                >
+                  <md-icon>search</md-icon>
+                </md-button>
+              </md-field>
+            </div>
+            <md-button class="md-raised md-primary" @click="setActivePage('create-user-to-app')">
+              <div class="s1-U__align-children--center s1-U__pd--rt8">
+                <md-icon class="s1-U__mg--rt4">add</md-icon>
+                <span>usuário</span>
+              </div>
+            </md-button>
+          </div>
           <div class="md-layout md-gutter s1-md-layout--mini">
             <div
               class="md-layout-item md-xsmall-size-100 md-small-size-100 md-medium-size-50 md-large-size-33 md-xlarge-size-25 s1-U__mg--bt16"
@@ -31,9 +53,21 @@
                     >{{user.Abbr}}</md-avatar>
                     <h2 class="md-title s1-U__text-ellipsis s1-U__full-width">{{user.Name}}</h2>
                   </div>
-                  <md-button class="md-icon-button s1-U__flex-shrink-0">
-                    <md-icon>more_vert</md-icon>
-                  </md-button>
+
+                  <md-menu md-direction="bottom-end">
+                    <md-button
+                      class="md-dense squared md-icon-button s1-U__flex-shrink-0"
+                      md-menu-trigger
+                    >
+                      <md-icon>more_vert</md-icon>
+                    </md-button>
+
+                    <md-menu-content>
+                      <md-menu-item
+                        @click="setActivePage('edit-user-to-app')"
+                      >Editar dados do usuário</md-menu-item>
+                    </md-menu-content>
+                  </md-menu>
                 </div>
                 <div class="s1-U__mg--tp8 s1-U__pd--lt48">
                   <p class="md-caption">PERFIL DE ACESSO</p>
@@ -267,7 +301,7 @@
           </div>
         </md-content>
         <md-divider/>
-        <md-dialog-actions class="s1-U__pd16 s1-U__text-align--right">
+        <md-dialog-actions class="s1-U__pd16 s1-U__pd--tp0 s1-U__text-align--right">
           <md-button class="md-raised md-primary">salvar</md-button>
         </md-dialog-actions>
       </md-dialog>
@@ -316,7 +350,6 @@ export default {
     },
     newColumns(page) {
       const calc = this.calcTable();
-      const n = Math.floor(Profiles.length / calc);
       const newProfiles = Profiles.slice(page * calc, page * calc + calc);
 
       this.currentProfilePage = page;

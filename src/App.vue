@@ -101,6 +101,12 @@
             <span class="md-list-item-text">Contas</span>
             <md-tooltip md-direction="right" v-show="!menuVisible">Contas</md-tooltip>
           </md-list-item>
+
+          <md-list-item @click="setActivePage('users-overview')">
+            <md-icon>person</md-icon>
+            <span class="md-list-item-text">Todos os usuários</span>
+            <md-tooltip md-direction="right" v-show="!menuVisible">Todos os usuários</md-tooltip>
+          </md-list-item>
         </md-list>
       </md-app-drawer>
 
@@ -118,6 +124,40 @@
           :activeAccount="activeAccount"
           :activeApp="activeApp"
         />
+        <users-overview
+          v-if="activePage === 'users-overview'"
+          :setActivePage="setActivePage"
+          :activeAccount="activeAccount"
+          :activeApp="activeApp"
+        />
+
+        <create-user
+          v-if="activePage === 'create-user'"
+          :setActivePage="setActivePage"
+          :activeAccount="activeAccount"
+          :activeApp="activeApp"
+        />
+
+        <edit-user
+          v-if="activePage === 'edit-user'"
+          :setActivePage="setActivePage"
+          :activeAccount="activeAccount"
+          :activeApp="activeApp"
+        />
+
+        <create-user-to-app
+          v-if="activePage === 'create-user-to-app'"
+          :setActivePage="setActivePage"
+          :activeAccount="activeAccount"
+          :activeApp="activeApp"
+        />
+
+        <edit-user-to-app
+          v-if="activePage === 'edit-user-to-app'"
+          :setActivePage="setActivePage"
+          :activeAccount="activeAccount"
+          :activeApp="activeApp"
+        />
       </md-app-content>
     </md-app>
   </div>
@@ -128,13 +168,18 @@ import Home from "./pages/Home/index";
 import AllMyAccounts from "./pages/AllMyAccounts/index";
 import MyAccountPanel from "./components/MyAccountPanel/index";
 import UsersByAccount from "./pages/UsersByAccount/index";
+import UsersOverview from "./pages/UsersOverview/index";
+import CreateUser from "./pages/CreateUser/index";
+import EditUser from "./pages/EditUser/index";
+import CreateUserToApp from "./pages/CreateUserToApp/index";
+import EditUserToApp from "./pages/EditUserToApp/index";
 import Profiles from "./data/_profiles.js";
 
 export default {
   name: "app",
   data: () => ({
     menuVisible: false,
-    activePage: "all-my-accounts",
+    activePage: "users-overview",
     activeAccount: "",
     activeApp: "",
     profile: Profiles[0]
@@ -143,7 +188,12 @@ export default {
     Home,
     AllMyAccounts,
     MyAccountPanel,
-    UsersByAccount
+    UsersByAccount,
+    UsersOverview,
+    CreateUser,
+    EditUser,
+    CreateUserToApp,
+    EditUserToApp
   },
   methods: {
     toggleMenu() {
