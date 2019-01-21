@@ -179,7 +179,7 @@ export default {
   name: "app",
   data: () => ({
     menuVisible: false,
-    activePage: "users-overview",
+    activePage: "all-my-accounts",
     activeAccount: "",
     activeApp: "",
     profile: Profiles[0]

@@ -66,6 +66,11 @@
                       <md-menu-item
                         @click="setActivePage('edit-user-to-app')"
                       >Editar dados do usuário</md-menu-item>
+                      <md-menu-item @click="showPasswordDialog = true">Alterar senha</md-menu-item>
+                      <md-divider class="s1-U__mg--tp8 s1-U__mg--bt8"></md-divider>
+                      <md-menu-item
+                        @click="showEditUserProfileShortcutDialog()"
+                      >Editar perfil de acesso</md-menu-item>
                     </md-menu-content>
                   </md-menu>
                 </div>
@@ -306,6 +311,60 @@
         </md-dialog-actions>
       </md-dialog>
     </section>
+    <md-dialog :md-active.sync="showPasswordDialog">
+      <md-content>
+        <h2 class="s1-U__fw--300 s1-U__mg--bt32 s1-U__mg--tp16">Alteração de senha</h2>
+        <p class="s1-U__mg--bt16 s1-U__width--300px">Nova senha para usuário</p>
+        <p class="md-subheading s1-U__mg--bt16">
+          <b>cromat</b>
+          <b class="s1-U__text-color--dark-2">@empresademais</b>
+        </p>
+        <div class="s1-U__pd--bt32 s1-U__pd--lt16">
+          <ul class="s1-U__mg0 s1-U__pd0">
+            <li>Mínimo 8 digitos;</li>
+            <li>pelo menos 1 caractere especial;</li>
+            <li>pelo menos 1 letra maiúscula</li>
+          </ul>
+        </div>
+        <div class="s1-U__mg--bt8">
+          <div class="s1-loc__md-field-wrapper s1-U__width--240px">
+            <md-field>
+              <label>Senha atual</label>
+              <md-input
+                v-model="form.Password"
+                id="current-password"
+                name="current-password"
+                type="password"
+                required
+              />
+            </md-field>
+          </div>
+          <div class="s1-loc__md-field-wrapper s1-U__width--240px">
+            <md-field :disabled="form.Password">
+              <label>Nova senha</label>
+              <md-input v-model="form.NewPassword" type="password" required/>
+            </md-field>
+          </div>
+          <div class="s1-loc__md-field-wrapper s1-U__width--240px">
+            <md-field>
+              <label>Confirmar senha</label>
+              <md-input v-model="form.ConfirmPassword" type="password" required/>
+            </md-field>
+          </div>
+        </div>
+      </md-content>
+      <md-dialog-actions class="s1-U__pd16 s1-U__text-align--right">
+        <md-button
+          class="s1-md-bordered s1-U__mg--rt8"
+          @click="unsetCancelingShowPasswordDialog()"
+        >cancelar</md-button>
+        <md-button
+          class="md-primary md-raised"
+          @click="unsetShowPasswordDialog()"
+          :disabled="!form.ConfirmPassword || !form.NewPassword || !form.Password || (form.NewPassword && form.NewPassword && form.NewPassword !== form.ConfirmPassword)"
+        >alterar senha</md-button>
+      </md-dialog-actions>
+    </md-dialog>
   </div>
 </template>
 
@@ -331,9 +390,22 @@ export default {
     currentProfilePage: 0,
     prevCountProfilePage: 0,
     nextCountProfilePage: 0,
-    profileVisualization: "actionsXprofiles",
+    profileVisualization: "profileList",
     editUserProfileShortcutDialog: false,
-    selectedProfile: "profile-1"
+    selectedProfile: "profile-1",
+    showPasswordDialog: false,
+    form: {
+      FirstName: "Clotilde",
+      LastName: "Matilde",
+      Username: "cromat",
+      Email: "cromatilde@gmail.com",
+      Password: "",
+      ConfirmPassword: "",
+      AccountsProfile1: "Normal",
+      AccountsProfile2: "Normal",
+      AccountsProfile3: "Normal",
+      Account: "Icatu MV"
+    }
   }),
   mounted: function() {
     this.$nextTick(function() {
@@ -375,6 +447,13 @@ export default {
     },
     closeEditUserProfileShortcutDialog() {
       this.editUserProfileShortcutDialog = false;
+    },
+    unsetShowPasswordDialog() {
+      this.showPasswordDialog = false;
+      this.showPasswordFeedback = true;
+    },
+    unsetCancelingShowPasswordDialog() {
+      this.showPasswordDialog = false;
     }
   }
 };

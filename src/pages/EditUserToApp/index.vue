@@ -122,7 +122,7 @@
         <h2 class="s1-U__fw--300 s1-U__mg--bt32 s1-U__mg--tp16">Alteração de senha</h2>
         <p class="s1-U__mg--bt16 s1-U__width--300px">Nova senha para usuário</p>
         <p class="md-subheading s1-U__mg--bt16">
-          <b>@cromat</b>
+          <b>cromat</b>
           <b class="s1-U__text-color--dark-2">@empresademais</b>
         </p>
         <div class="s1-U__pd--bt32 s1-U__pd--lt16">
