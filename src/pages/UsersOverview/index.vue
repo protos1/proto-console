@@ -46,7 +46,7 @@
               <md-menu-item @click="setActivePage('edit-user')">Editar dados do usuário</md-menu-item>
               <md-menu-item @click="showPasswordDialog = true">Alterar senha</md-menu-item>
               <md-divider class="s1-U__mg--tp8 s1-U__mg--bt8"></md-divider>
-              <md-menu-item @click="setActivePage('edit-user')">Editar perfis de acesso</md-menu-item>
+              <md-menu-item @click="setActivePage('manage-user-profile')">Editar perfis de acesso</md-menu-item>
             </md-menu-content>
           </md-menu>
         </div>
