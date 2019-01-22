@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="s1-mezzanine-wrapper" id="s1-mezzanine-wrapper">
-      <div class="s1-mezzanine">
+      <div class="s1-mezzanine" style="z-index: 2">
         <md-card style="border-radius: 0">
           <md-card-header class="s1-U__border--bottom1 s1-U__pd--lt20">
             <md-card-header-text>
@@ -11,7 +11,7 @@
               <md-icon>close</md-icon>
             </md-button>
           </md-card-header>
-          <div style="height: calc(100vh - 74px)">
+          <div style="height: calc(100vh - 142px)">
             <md-tabs class="md-transparent s1-mezzanine__tab s1-U__full-height">
               <md-tab
                 class="s1-U__pd--tp32 s1-U__pd--bt64"
@@ -50,9 +50,15 @@
                       >{{u.Abbr}}</md-avatar>
                       <h2 class="md-title s1-U__text-ellipsis s1-U__full-width">{{u.Name}}</h2>
                     </div>
-                    <md-button class="md-icon-button s1-U__flex-shrink-0">
-                      <md-icon>more_vert</md-icon>
-                    </md-button>
+                    <md-menu md-direction="bottom-end">
+                      <md-button class="md-dense squared md-icon-button" md-menu-trigger>
+                        <md-icon>more_vert</md-icon>
+                      </md-button>
+
+                      <md-menu-content>
+                        <md-menu-item>Desassociar desse perfil</md-menu-item>
+                      </md-menu-content>
+                    </md-menu>
                   </div>
                   <div class="s1-U__mg--tp8 s1-U__pd--lt48">
                     <p class="md-caption">PERFIL DE ACESSO</p>
@@ -68,6 +74,12 @@
               </md-tab>
             </md-tabs>
           </div>
+          <md-card-actions class="s1-U__pd16">
+            <md-button
+              class="md-primary s1-md-bordered"
+              @click="setActivePage('edit-profile')"
+            >editar</md-button>
+          </md-card-actions>
         </md-card>
       </div>
     </div>
@@ -172,6 +184,13 @@
           :activeAccount="activeAccount"
           :activeApp="activeApp"
         />
+
+        <edit-profile
+          v-if="activePage === 'edit-profile'"
+          :setActivePage="setActivePage"
+          :activeAccount="activeAccount"
+          :activeApp="activeApp"
+        />
       </md-app-content>
     </md-app>
   </div>
@@ -189,6 +208,7 @@ import CreateUserToApp from "./pages/CreateUserToApp/index";
 import EditUserToApp from "./pages/EditUserToApp/index";
 import ManageUserProfile from "./pages/ManageUserProfile/index";
 import CreateProfile from "./pages/CreateProfile/index";
+import EditProfile from "./pages/EditProfile/index";
 import Profiles from "./data/_profiles.js";
 
 export default {
@@ -211,7 +231,8 @@ export default {
     CreateUserToApp,
     EditUserToApp,
     ManageUserProfile,
-    CreateProfile
+    CreateProfile,
+    EditProfile
   },
   methods: {
     toggleMenu() {

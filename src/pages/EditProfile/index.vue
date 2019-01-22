@@ -8,17 +8,20 @@
         >
           <md-icon>arrow_back</md-icon>
         </md-button>
-        <span>Criando perfil</span>
+        <span>Editando perfil</span>
       </h1>
     </div>
 
     <md-card class="s1-loc__width--900px">
       <md-card-content>
-        <h2 class="s1-U__fw--300 s1-U__pd--tp4">
+        <div class="s1-U__pd16">
           <span class="s1-U__text-color--dark-2">Icatu MV / Vendas</span>
-        </h2>
+          <h2 class="s1-U__fw--300 s1-U__mg--bt4">
+            <span>Unuseful 3</span>
+          </h2>
+        </div>
         <md-divider class="s1-U__mg--tp16 s1-U__mg--bt16"/>
-        <div class="s1-U__pd--lt16">
+        <div class="s1-U__pd--lt16 s1-U__mg--tp32">
           <div class="s1-loc__md-field-wrapper s1-U__width--300px">
             <md-field>
               <label>Nome do perfil</label>
@@ -43,32 +46,32 @@
 
 <script>
 export default {
-  name: "CreateProfile",
+  name: "EditProfile",
   props: {
     setActivePage: Function
   },
   data: () => ({
     form: {
-      Name: "",
-      ProdutosObter: false,
+      Name: "Unuseful 3",
+      ProdutosObter: true,
       ProdutosObterLista: false,
       ProdutosCriar: true,
       ProdutosAdicionarImagem: false,
-      ProdutosRemoverImagem: false,
+      ProdutosRemoverImagem: true,
       ProdutosObterConfiguração: false,
-      ProdutosAtualizarconfiguração: false,
+      ProdutosAtualizarconfiguração: true,
       ProdutosTestarcertificado: false,
       ProdutosTestarcomunicação: false,
-      ProdutosDescontinuar: false,
+      ProdutosDescontinuar: true,
       ProdutosPublicar: false,
-      TagsObter: false,
+      TagsObter: true,
       TagsObterLista: false,
       PublicaçõesObter: false,
       PublicaçõesObterLista: false,
-      PublicaçõesCriar: false,
+      PublicaçõesCriar: true,
       ClienteObter: false,
       ClienteObterLista: false,
-      ClienteCriar: false,
+      ClienteCriar: true,
       ClienteAtualizar: false,
       EndereçosObter: false,
       EndereçosObterLista: false,
@@ -84,9 +87,9 @@ export default {
       PagamentosCriar: false,
       VendasObter: false,
       VendasObterLista: false,
-      VendasCriar: false,
+      VendasCriar: true,
       VendasObterCertificado: false,
-      VendasEnviodecertificado: false
+      VendasEnviodecertificado: true
     },
     actions: [
       { Name: "Produtos - Obter", Key: "ProdutosObter" },

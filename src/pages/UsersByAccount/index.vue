@@ -258,7 +258,7 @@
                       </md-button>
 
                       <md-menu-content>
-                        <md-menu-item>Editar</md-menu-item>
+                        <md-menu-item @click="setActivePage('edit-profile')">Editar</md-menu-item>
                         <md-menu-item @click="openMezzanine()">Ver detalhes</md-menu-item>
                       </md-menu-content>
                     </md-menu>
