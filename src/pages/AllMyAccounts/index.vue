@@ -71,7 +71,6 @@
                     <md-menu-content>
                       <md-menu-item @click="setUser('Icatu MV', 'Vendas')">Usuários</md-menu-item>
                       <md-menu-item>Perfis</md-menu-item>
-                      <md-menu-item>Configurações</md-menu-item>
                     </md-menu-content>
                   </md-menu>
                 </div>
@@ -102,7 +101,6 @@
                     <md-menu-content>
                       <md-menu-item @click="setUser('Icatu MV', 'Analytics')">Usuários</md-menu-item>
                       <md-menu-item>Perfis</md-menu-item>
-                      <md-menu-item>Configurações</md-menu-item>
                     </md-menu-content>
                   </md-menu>
                 </div>
@@ -159,7 +157,6 @@
                     <md-menu-content>
                       <md-menu-item @click="setUser('Clotilde Matilde CCVV', 'Vendas')">Usuários</md-menu-item>
                       <md-menu-item>Perfis</md-menu-item>
-                      <md-menu-item>Configurações</md-menu-item>
                     </md-menu-content>
                   </md-menu>
                 </div>

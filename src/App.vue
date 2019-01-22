@@ -123,7 +123,12 @@
       </md-app-drawer>
 
       <md-app-content class="s1-loc__body-bg">
-        <home v-if="activePage === 'home'" :setActivePage="setActivePage"/>
+        <home
+          v-if="activePage === 'home'"
+          :setActivePage="setActivePage"
+          :setActiveAccount="setActiveAccount"
+          :setActiveApp="setActiveApp"
+        />
         <all-my-accounts
           v-if="activePage === 'all-my-accounts'"
           :setActivePage="setActivePage"
@@ -349,5 +354,9 @@ export default {
 }
 div.md-field {
   margin-bottom: 16px;
+}
+
+.s1-mezzanine-wrapper.mezzanine-is-active + .s1-loc__my-account-panel {
+  z-index: -1;
 }
 </style>

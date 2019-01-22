@@ -275,7 +275,6 @@
             </div>
           </div>
         </md-tab>
-        <md-tab class="s1-U__pd--tp32 s1-U__pd--bt64" id="tab-settings" md-label="Configurações"></md-tab>
       </md-tabs>
       <md-dialog class="md-elevation-2" :md-active.sync="editUserProfileShortcutDialog">
         <div class="s1-U__pd16">
