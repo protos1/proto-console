@@ -106,10 +106,10 @@
                 </md-select>
               </md-field>
             </div>
-            <md-button class="md-raised md-primary">
+            <md-button class="md-raised md-primary" @click="setActivePage('create-profile')">
               <div class="s1-U__align-children--center s1-U__pd--rt8">
                 <md-icon class="s1-U__mg--rt4">add</md-icon>
-                <span>criar perfil</span>
+                <span>perfil</span>
               </div>
             </md-button>
           </div>

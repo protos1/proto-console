@@ -165,6 +165,13 @@
           :activeAccount="activeAccount"
           :activeApp="activeApp"
         />
+
+        <create-profile
+          v-if="activePage === 'create-profile'"
+          :setActivePage="setActivePage"
+          :activeAccount="activeAccount"
+          :activeApp="activeApp"
+        />
       </md-app-content>
     </md-app>
   </div>
@@ -181,6 +188,7 @@ import EditUser from "./pages/EditUser/index";
 import CreateUserToApp from "./pages/CreateUserToApp/index";
 import EditUserToApp from "./pages/EditUserToApp/index";
 import ManageUserProfile from "./pages/ManageUserProfile/index";
+import CreateProfile from "./pages/CreateProfile/index";
 import Profiles from "./data/_profiles.js";
 
 export default {
@@ -202,7 +210,8 @@ export default {
     EditUser,
     CreateUserToApp,
     EditUserToApp,
-    ManageUserProfile
+    ManageUserProfile,
+    CreateProfile
   },
   methods: {
     toggleMenu() {
