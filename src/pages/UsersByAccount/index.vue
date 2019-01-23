@@ -464,6 +464,11 @@ export default {
 </script>
 
 <style lang="scss">
+#my-tabs .md-content.md-tabs-content {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
 .md-icon.s1-loc__md-icon--mini {
   width: 18px;
   min-width: 18px;
