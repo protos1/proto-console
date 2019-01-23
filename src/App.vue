@@ -5,13 +5,14 @@
         <md-card style="border-radius: 0">
           <md-card-header class="s1-U__border--bottom1 s1-U__pd--lt20">
             <md-card-header-text>
+              <p class="s1-U__text-color--dark-2 s1-U__text-ellipsis">PERFIL</p>
               <p class="md-title s1-U__text-ellipsis">Administrador</p>
             </md-card-header-text>
             <md-button class="md-icon-button" @click="closeMezzanine()">
               <md-icon>close</md-icon>
             </md-button>
           </md-card-header>
-          <div style="height: calc(100vh - 142px)">
+          <div style="height: calc(100vh - 156px)">
             <md-tabs class="md-transparent s1-mezzanine__tab s1-U__full-height">
               <md-tab
                 class="s1-U__pd--tp32 s1-U__pd--bt64"
@@ -74,7 +75,7 @@
               </md-tab>
             </md-tabs>
           </div>
-          <md-card-actions class="s1-U__pd16">
+          <md-card-actions class="s1-U__pd16 s1-U__border--top1">
             <md-button
               class="md-primary s1-md-bordered"
               @click="setActivePage('edit-profile')"
