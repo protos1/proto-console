@@ -1,35 +1,32 @@
 <template>
   <div class="s1-loc__container">
     <div class="s1-U__mg--bt32">
-      <h1 class="md-display-1 s1-U__text-color--dark-2 s1-U__align-children--center">
+      <div class="md-display-1 s1-U__text-color--dark-2 s1-U__align-children--center">
         <md-button
-          class="md-dense md-icon-button s1-U__mg--rt16"
+          class="md-dense md-icon-button s1-U__mg--rt16 s1-U__mg--tp16"
           @click="setActivePage('users-by-account')"
         >
           <md-icon>arrow_back</md-icon>
         </md-button>
-        <span>Editando usuário</span>
-      </h1>
+        <div>
+          <p class="md-caption s1-U__fw--300 s1-U__text-color--dark-2">ICATU MV/ VENDAS</p>
+          <h1 class="md-display-1 s1-U__text-color--dark-2 s1-U__align-children--center">
+            <span>Edição de usuário</span>
+          </h1>
+        </div>
+      </div>
     </div>
 
     <md-card class="s1-loc__width--900px">
       <md-card-content>
-        <div class="s1-U__pd16">
-          <span class="s1-U__text-color--dark-2">Icatu MV / Vendas</span>
-          <h2 class="s1-U__fw--300 s1-U__mg--bt4">
-            <span>renanzozimo</span>
-            <span class="s1-U__text-color--dark-2">@empresademais</span>
-          </h2>
-          <h4 class="s1-U__text-color--dark-2 s1-U__fw--300">
-            <div class="s1-U__align-children--center">
-              <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
-              <span class="md-body-2 s1-U__mg--lt4">Administrador</span>
-            </div>
-          </h4>
-        </div>
-        <md-divider class="s1-U__mg--tp16 s1-U__mg--bt32"/>
         <div>
-          <h3 class="md-title s1-U__text-color--primary s1-U__mg--tp16">Dados cadastrais</h3>
+          <div class="s1-U__mg--tp4">
+            <p class="md-caption">USUÁRIO</p>
+            <p class="md-title s1-U__text-color--primary">Clotilde Matilde</p>
+            <p class="md-caption">cromat@icatu</p>
+            <md-divider class="s1-U__mg--bt16 s1-U__mg--tp16"></md-divider>
+          </div>
+          <h3 class="md-title s1-U__text-color--primary s1-U__mg--tp4">Dados cadastrais</h3>
           <div class="s1-U__pd--lt16 s1-U__pd--tp16">
             <div class="s1-loc__md-field-wrapper s1-U__width--300px">
               <md-field>
@@ -49,7 +46,7 @@
               <md-field>
                 <label>Username (login)</label>
                 <md-input v-model="form.Username" required/>
-                <span class="md-suffix">@empresademais</span>
+                <span class="md-suffix">@icatu</span>
               </md-field>
             </div>
 
@@ -123,7 +120,7 @@
         <p class="s1-U__mg--bt16 s1-U__width--300px">Nova senha para usuário</p>
         <p class="md-subheading s1-U__mg--bt16">
           <b>cromat</b>
-          <b class="s1-U__text-color--dark-2">@empresademais</b>
+          <b class="s1-U__text-color--dark-2">@icatu</b>
         </p>
         <div class="s1-U__pd--bt32 s1-U__pd--lt16">
           <ul class="s1-U__mg0 s1-U__pd0">

@@ -28,7 +28,7 @@
     <md-dialog class="md-elevation-2" :md-active.sync="dialogs.userDialog">
       <div class="s1-U__pd--lt16 s1-U__pd--rt16 s1-U__pd--tp16">
         <p class="md-caption">ATALHO</p>
-        <h3>Editar usuário</h3>
+        <h3>Edição usuário</h3>
       </div>
       <div class="s1-U__pd--lt16 s1-U__pd--rt16 s1-U__pd--tp16">
         <div class="s1-loc__md-field-wrapper s1-U__width--300px">
@@ -55,7 +55,7 @@
     <md-dialog class="md-elevation-2" :md-active.sync="dialogs.profileToEditDialog">
       <div class="s1-U__pd--lt16 s1-U__pd--rt16 s1-U__pd--tp16">
         <p class="md-caption">ATALHO</p>
-        <h3>Editar perfil</h3>
+        <h3>Edição de perfil</h3>
       </div>
       <div class="s1-U__pd--lt16 s1-U__pd--rt16 s1-U__pd--tp16">
         <div class="s1-loc__md-field-wrapper s1-U__width--300px">
@@ -172,7 +172,7 @@ export default {
       actions: [
         {
           id: "action-01",
-          name: "Criar usuário",
+          name: "Cadastrar usuário",
           icon: "person",
           goTo: goToPage(
             "create-user",

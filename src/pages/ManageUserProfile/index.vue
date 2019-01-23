@@ -8,19 +8,18 @@
         >
           <md-icon>arrow_back</md-icon>
         </md-button>
-        <span>Perfis de acesso do usuário</span>
+        <span>Perfis de usuário</span>
       </h1>
     </div>
     <md-card class="s1-loc__width--900px">
       <md-card-content>
-        <div class="s1-U__pd16">
-          <h2 class="s1-U__fw--300 s1-U__mg--bt4">
-            <span>renanzozimo</span>
-            <span class="s1-U__text-color--dark-2">@empresademais</span>
-          </h2>
+        <div class="s1-U__mg--tp4">
+          <p class="md-caption">USUÁRIO</p>
+          <p class="md-title s1-U__text-color--primary">Clotilde Matilde</p>
+          <p class="md-caption">cromat@empresademais</p>
+          <md-divider class="s1-U__mg--bt16 s1-U__mg--tp16"></md-divider>
         </div>
-        <md-divider class="s1-U__mg--tp16 s1-U__mg--bt32"/>
-        <div class="s1-U__pd--lt16 s1-U__mg--bt32">
+        <div class="s1-U__pd--lt16 s1-U__mg--bt32 s1-U__mg--tp20">
           <div class="s1-U__align-children--center s1-U__mg--tp8 s1-U__mg--bt16">
             <img
               src="https://s1-cdn-brazilsouth.azureedge.net/accounts.svg"

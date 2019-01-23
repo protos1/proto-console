@@ -1,26 +1,27 @@
 <template>
   <div class="s1-loc__container">
     <div class="s1-U__mg--bt32">
-      <h1 class="md-display-1 s1-U__text-color--dark-2 s1-U__align-children--center">
+      <div class="md-display-1 s1-U__text-color--dark-2 s1-U__align-children--center">
         <md-button
-          class="md-dense md-icon-button s1-U__mg--rt16"
+          class="md-dense md-icon-button s1-U__mg--rt16 s1-U__mg--tp16"
           @click="setActivePage('users-by-account')"
         >
           <md-icon>arrow_back</md-icon>
         </md-button>
-        <span>Criando usuário</span>
-      </h1>
+        <div>
+          <p class="md-caption s1-U__fw--300 s1-U__text-color--dark-2">ICATU MV/ VENDAS</p>
+          <h1 class="md-display-1 s1-U__text-color--dark-2 s1-U__align-children--center">
+            <span>Cadastro de usuário</span>
+          </h1>
+        </div>
+      </div>
     </div>
 
     <md-card class="s1-loc__width--900px">
       <md-card-content>
-        <h2 class="s1-U__fw--300 s1-U__pd--tp4">
-          <span class="s1-U__text-color--dark-2">Icatu MV / Vendas</span>
-        </h2>
-        <md-divider class="s1-U__mg--tp16 s1-U__mg--bt16"/>
         <div>
-          <h3 class="md-title s1-U__text-color--primary s1-U__mg--tp16">Dados cadastrais</h3>
-          <div class="s1-U__pd--lt16 s1-U__pd--tp16">
+          <!-- <h3 class="md-title s1-U__text-color--primary s1-U__mg--tp4">Dados cadastrais</h3> -->
+          <div class="s1-U__pd--tp4">
             <div class="s1-loc__md-field-wrapper s1-U__width--300px">
               <md-field>
                 <label>Primeiro Nome</label>
@@ -39,7 +40,7 @@
               <md-field>
                 <label>Username (login)</label>
                 <md-input v-model="form.Username" required/>
-                <span class="md-suffix">@empresademais</span>
+                <span class="md-suffix">@icatu</span>
               </md-field>
             </div>
 
@@ -69,13 +70,13 @@
               @click="setShowPasswordDialog"
             >alterar senha</md-button>-->
           </div>
-          <h3 class="md-title s1-U__pd--tp32 s1-U__text-color--primary">Perfis de acesso</h3>
+          <!-- <h3 class="md-title s1-U__pd--tp32 s1-U__text-color--primary">Perfis de acesso</h3>
           <p class="s1-U__pd--tp8 s1-U__mg--bt16 md-caption">
             Para ter acesso ao sistema, o usuário precisa de pelo menos
             <b>um perfil</b> em
             <b>uma conta</b> para login.
-          </p>
-          <div class="s1-U__pd--lt16">
+          </p>-->
+          <!-- <div class="s1-U__pd--lt16">
             <div class="s1-U__align-children--center s1-U__mg--tp8 s1-U__mg--bt16">
               <img
                 src="https://s1-cdn-brazilsouth.azureedge.net/accounts.svg"
@@ -106,7 +107,7 @@
                 </tr>
               </table>
             </div>
-          </div>
+          </div>-->
         </div>
       </md-card-content>
 
@@ -219,6 +220,11 @@ export default {
     setWorkspaceSugestion() {
       this.settings.Workspace = this.workspaceSugestion;
     }
+  },
+  mounted: function() {
+    this.$nextTick(function() {
+      document.querySelector("input").focus();
+    });
   }
 };
 </script>

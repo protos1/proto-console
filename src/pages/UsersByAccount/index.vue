@@ -68,9 +68,7 @@
                       >Editar dados do usuário</md-menu-item>
                       <md-menu-item @click="showPasswordDialog = true">Alterar senha</md-menu-item>
                       <md-divider class="s1-U__mg--tp8 s1-U__mg--bt8"></md-divider>
-                      <md-menu-item
-                        @click="showEditUserProfileShortcutDialog()"
-                      >Editar perfil de acesso</md-menu-item>
+                      <md-menu-item @click="showEditUserProfileShortcutDialog()">Editar perfil</md-menu-item>
                     </md-menu-content>
                   </md-menu>
                 </div>
@@ -316,7 +314,7 @@
         <p class="s1-U__mg--bt16 s1-U__width--300px">Nova senha para usuário</p>
         <p class="md-subheading s1-U__mg--bt16">
           <b>cromat</b>
-          <b class="s1-U__text-color--dark-2">@empresademais</b>
+          <b class="s1-U__text-color--dark-2">@icatu</b>
         </p>
         <div class="s1-U__pd--bt32 s1-U__pd--lt16">
           <ul class="s1-U__mg0 s1-U__pd0">

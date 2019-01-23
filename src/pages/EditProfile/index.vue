@@ -1,27 +1,30 @@
 <template>
   <div class="s1-loc__container">
     <div class="s1-U__mg--bt32">
-      <h1 class="md-display-1 s1-U__text-color--dark-2 s1-U__align-children--center">
+      <div class="md-display-1 s1-U__text-color--dark-2 s1-U__align-children--center">
         <md-button
-          class="md-dense md-icon-button s1-U__mg--rt16"
+          class="md-dense md-icon-button s1-U__mg--rt16 s1-U__mg--tp16"
           @click="setActivePage('users-by-account')"
         >
           <md-icon>arrow_back</md-icon>
         </md-button>
-        <span>Editando perfil</span>
-      </h1>
+        <div>
+          <p class="md-caption s1-U__fw--300 s1-U__text-color--dark-2">ICATU MV/ VENDAS</p>
+          <h1 class="md-display-1 s1-U__text-color--dark-2 s1-U__align-children--center">
+            <span>Edição de perfil</span>
+          </h1>
+        </div>
+      </div>
     </div>
 
     <md-card class="s1-loc__width--900px">
       <md-card-content>
-        <div class="s1-U__pd16">
-          <span class="s1-U__text-color--dark-2">Icatu MV / Vendas</span>
-          <h2 class="s1-U__fw--300 s1-U__mg--bt4">
-            <span>Unuseful 3</span>
-          </h2>
+        <div class="s1-U__mg--tp4">
+          <p class="md-caption">PERFIL</p>
+          <p class="md-title s1-U__text-color--primary">Unuseful 3</p>
+          <md-divider class="s1-U__mg--bt16 s1-U__mg--tp16"></md-divider>
         </div>
-        <md-divider class="s1-U__mg--tp16 s1-U__mg--bt16"/>
-        <div class="s1-U__pd--lt16 s1-U__mg--tp32">
+        <div class="s1-U__pd--lt16">
           <div class="s1-loc__md-field-wrapper s1-U__width--300px">
             <md-field>
               <label>Nome do perfil</label>

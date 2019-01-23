@@ -25,8 +25,8 @@
         </div>
       </md-button>
     </div>
-    <section class="s1-U__pd--tp32">
-      <md-card class="s1-U__pd16 s1-U__mg--bt20" v-for="user in users" v-bind:key="user.id">
+    <section class="s1-U__pd--tp16">
+      <md-card class="s1-U__pd16 s1-U__mg--bt8" v-for="user in users" v-bind:key="user.id">
         <div
           class="s1-U__align-children--center s1-U__justify-content--space-between s1-U__full-width"
         >
@@ -46,13 +46,13 @@
               <md-menu-item @click="setActivePage('edit-user')">Editar dados do usuário</md-menu-item>
               <md-menu-item @click="showPasswordDialog = true">Alterar senha</md-menu-item>
               <md-divider class="s1-U__mg--tp8 s1-U__mg--bt8"></md-divider>
-              <md-menu-item @click="setActivePage('manage-user-profile')">Editar perfis de acesso</md-menu-item>
+              <md-menu-item @click="setActivePage('manage-user-profile')">Editar perfis</md-menu-item>
             </md-menu-content>
           </md-menu>
         </div>
         <div class="s1-U__mg--tp8 s1-U__pd--lt48">
-          <div class="md-layout">
-            <div class="md-layout-item">
+          <div class="md-layout md-gutter">
+            <div class="md-layout-item s1-U__mg--bt16">
               <div class="s1-U__align-children--center s1-U__mg--bt8">
                 <img
                   src="https://s1-cdn-brazilsouth.azureedge.net/sales.svg"
@@ -63,20 +63,20 @@
               </div>
               <table>
                 <tr>
-                  <td class="s1-U__text-color--dark-2">Icatu MV</td>
+                  <td class="s1-U__text-color--dark-2 s1-U__text-nowrap">Icatu MV</td>
                   <td>
                     <div class="s1-U__vertical-divider s1-U__mg--rt8 s1-U__mg--lt8"/>
                   </td>
                   <td>
                     <div class="s1-U__align-children--center">
                       <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
-                      <span class="md-body-2 s1-U__mg--lt4">Operador</span>
+                      <span class="md-body-2 s1-U__mg--lt4 s1-U__text-nowrap">Operador</span>
                     </div>
                   </td>
                 </tr>
               </table>
             </div>
-            <div class="md-layout-item">
+            <div class="md-layout-item s1-U__mg--bt16">
               <div class="s1-U__align-children--center s1-U__mg--bt8">
                 <img
                   src="https://s1-cdn-brazilsouth.azureedge.net/analytics.svg"
@@ -87,44 +87,44 @@
               </div>
               <table>
                 <tr>
-                  <td class="s1-U__text-color--dark-2">Icatu MV</td>
+                  <td class="s1-U__text-color--dark-2 s1-U__text-nowrap">Icatu MV</td>
                   <td>
                     <div class="s1-U__vertical-divider s1-U__mg--rt8 s1-U__mg--lt8"/>
                   </td>
                   <td>
                     <div class="s1-U__align-children--center">
                       <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
-                      <span class="md-body-2 s1-U__mg--lt4">Analista</span>
+                      <span class="md-body-2 s1-U__mg--lt4 s1-U__text-nowrap">Analista</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td class="s1-U__text-color--dark-2">Icatu BV</td>
+                  <td class="s1-U__text-color--dark-2 s1-U__text-nowrap">Icatu BV</td>
                   <td>
                     <div class="s1-U__vertical-divider s1-U__mg--rt8 s1-U__mg--lt8"/>
                   </td>
                   <td>
                     <div class="s1-U__align-children--center">
                       <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
-                      <span class="md-body-2 s1-U__mg--lt4">Analista de Dados</span>
+                      <span class="md-body-2 s1-U__mg--lt4 s1-U__text-nowrap">Analista de Dados</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td class="s1-U__text-color--dark-2">Icatu Nova</td>
+                  <td class="s1-U__text-color--dark-2 s1-U__text-nowrap">Icatu Nova</td>
                   <td>
                     <div class="s1-U__vertical-divider s1-U__mg--rt8 s1-U__mg--lt8"/>
                   </td>
                   <td>
                     <div class="s1-U__align-children--center">
                       <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
-                      <span class="md-body-2 s1-U__mg--lt4">Analista de Dados</span>
+                      <span class="md-body-2 s1-U__mg--lt4 s1-U__text-nowrap">Analista de Dados</span>
                     </div>
                   </td>
                 </tr>
               </table>
             </div>
-            <div class="md-layout-item">
+            <div class="md-layout-item s1-U__mg--bt16">
               <div class="s1-U__align-children--center s1-U__mg--bt8">
                 <img
                   src="https://s1-cdn-brazilsouth.azureedge.net/customer-service.svg"
@@ -135,21 +135,21 @@
               </div>
               <table>
                 <tr>
-                  <td class="s1-U__text-color--dark-2">Icatu MV</td>
+                  <td class="s1-U__text-color--dark-2 s1-U__text-nowrap">Icatu MV</td>
                   <td>
                     <div class="s1-U__vertical-divider s1-U__mg--rt8 s1-U__mg--lt8"/>
                   </td>
                   <td>
                     <div class="s1-U__align-children--center">
                       <md-icon class="md-accent" style="margin-left: -2px">account_box</md-icon>
-                      <span class="md-body-2 s1-U__mg--lt4">Admin</span>
+                      <span class="md-body-2 s1-U__mg--lt4 s1-U__text-nowrap">Admin</span>
                     </div>
                   </td>
                 </tr>
               </table>
             </div>
-            <div class="md-layout-item">
-              <h3 class="s1-U__mg--bt8">Sem acesso às aplicações:</h3>
+            <div class="md-layout-item s1-U__mg--bt16">
+              <h3 class="s1-U__mg--bt8 s1-U__mg--bt16">Sem acesso às aplicações:</h3>
               <div class="s1-U__align-children--center s1-U__mg--bt8">
                 <img
                   src="https://s1-cdn-brazilsouth.azureedge.net/accounts.svg"
@@ -177,7 +177,7 @@
         <p class="s1-U__mg--bt16 s1-U__width--300px">Nova senha para usuário</p>
         <p class="md-subheading s1-U__mg--bt16">
           <b>cromat</b>
-          <b class="s1-U__text-color--dark-2">@empresademais</b>
+          <b class="s1-U__text-color--dark-2">@icatu</b>
         </p>
         <div class="s1-U__pd--bt32 s1-U__pd--lt16">
           <ul class="s1-U__mg0 s1-U__pd0">
