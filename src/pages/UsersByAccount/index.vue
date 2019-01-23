@@ -12,7 +12,7 @@
       </h1>
     </header>
     <section>
-      <md-tabs class="md-transparent">
+      <md-tabs class="md-transparent" id="my-tabs">
         <md-tab class="s1-U__pd--tp32 s1-U__pd--bt64" id="tab-users" md-label="Usuários">
           <div
             class="s1-U__align-children--center s1-U__justify-content--space-between s1-U__mg--bt16"
@@ -378,7 +378,8 @@ export default {
     setActivePage: Function,
     setActiveAccount: Function,
     activeAccount: String,
-    activeApp: String
+    activeApp: String,
+    setTab: Number
   },
   data: () => ({
     search: "",
@@ -409,6 +410,12 @@ export default {
   mounted: function() {
     this.$nextTick(function() {
       this.newColumns(0);
+      const setTab = this.$props.setTab;
+      setTimeout(() => {
+        document
+          .querySelector("#my-tabs .md-tabs-navigation")
+          .children[setTab].click();
+      }, 500);
     });
   },
   methods: {

@@ -135,12 +135,14 @@
           :setActivePage="setActivePage"
           :setActiveAccount="setActiveAccount"
           :setActiveApp="setActiveApp"
+          :setActiveTab="setActiveTab"
         />
         <users-by-account
           v-if="activePage === 'users-by-account'"
           :setActivePage="setActivePage"
           :activeAccount="activeAccount"
           :activeApp="activeApp"
+          :setTab="setTab"
         />
         <users-overview
           v-if="activePage === 'users-overview'"
@@ -224,7 +226,8 @@ export default {
     activePage: "all-my-accounts",
     activeAccount: "",
     activeApp: "",
-    profile: Profiles[0]
+    profile: Profiles[0],
+    setTab: 0
   }),
   components: {
     Home,
@@ -259,6 +262,9 @@ export default {
     },
     setActiveApp(name) {
       this.activeApp = name;
+    },
+    setActiveTab(index) {
+      this.setTab = index;
     }
   }
 };
