@@ -106,12 +106,12 @@
                 </div>
               </md-card>
             </div>
-            <div class="md-layout-item s1-U__width--210px">
+            <!-- <div class="md-layout-item s1-U__width--210px">
               <md-button class="s1-U__full-height s1-U__full-width s1-U__border-dashed--2">
                 <md-icon class="md-size-3x">add</md-icon>
               </md-button>
               <md-tooltip md-direction="top">adicionar aplicação</md-tooltip>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>
@@ -163,12 +163,12 @@
               </md-card>
             </div>
 
-            <div class="md-layout-item s1-U__width--210px">
+            <!-- <div class="md-layout-item s1-U__width--210px">
               <md-button class="s1-U__full-height s1-U__full-width s1-U__border-dashed--2">
                 <md-icon class="md-size-3x">add</md-icon>
               </md-button>
               <md-tooltip md-direction="top">adicionar aplicação</md-tooltip>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>

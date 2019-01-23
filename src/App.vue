@@ -158,6 +158,13 @@
           :activeApp="activeApp"
         />
 
+        <create-account
+          v-if="activePage === 'create-account'"
+          :setActivePage="setActivePage"
+          :activeAccount="activeAccount"
+          :activeApp="activeApp"
+        />
+
         <edit-user
           v-if="activePage === 'edit-user'"
           :setActivePage="setActivePage"
@@ -211,6 +218,7 @@ import MyAccountPanel from "./components/MyAccountPanel/index";
 import UsersByAccount from "./pages/UsersByAccount/index";
 import UsersOverview from "./pages/UsersOverview/index";
 import CreateUser from "./pages/CreateUser/index";
+import CreateAccount from "./pages/CreateAccount/index";
 import EditUser from "./pages/EditUser/index";
 import CreateUserToApp from "./pages/CreateUserToApp/index";
 import EditUserToApp from "./pages/EditUserToApp/index";
@@ -236,6 +244,7 @@ export default {
     UsersByAccount,
     UsersOverview,
     CreateUser,
+    CreateAccount,
     EditUser,
     CreateUserToApp,
     EditUserToApp,

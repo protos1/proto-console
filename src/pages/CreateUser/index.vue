@@ -244,6 +244,11 @@ export default {
     setWorkspaceSugestion() {
       this.settings.Workspace = this.workspaceSugestion;
     }
+  },
+  mounted: function() {
+    this.$nextTick(function() {
+      document.querySelector("input").focus();
+    });
   }
 };
 </script>

@@ -18,6 +18,7 @@
           <span class="s1-U__text-color--dark-2">Icatu MV / Vendas</span>
         </h2>
         <md-divider class="s1-U__mg--tp16 s1-U__mg--bt16"/>
+        <h3 class="md-title s1-U__text-color--primary s1-U__mg--tp4">Dados cadastrais</h3>
         <div class="s1-U__pd--lt16">
           <div class="s1-loc__md-field-wrapper s1-U__width--300px">
             <md-field>
@@ -142,6 +143,11 @@ export default {
       { Name: "Vendas - Obter Certificado", Key: "VendasObterCertificado" },
       { Name: "Vendas - Envio de certificado", Key: "VendasEnviodecertificado" }
     ]
-  })
+  }),
+  mounted: function() {
+    this.$nextTick(function() {
+      document.querySelector("input").focus();
+    });
+  }
 };
 </script>
