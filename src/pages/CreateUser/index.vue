@@ -144,9 +144,12 @@
 
     <md-dialog :md-active.sync="showDialogProfileOption">
       <md-content>
-        <p>Deseja configurar agora os perfis de acesso para as demais aplicações?</p>
+        <p>Deseja configurar agora os perfis de acesso para as demais aplicações? Sem acesso ao
+          <b>Accounts</b>, por exemplo, o usuário será
+          <b>incapaz de fazer login.</b>
+        </p>
       </md-content>
-      <md-dialog-actions class="s1-U__pd16 s1-U__text-align--right">
+      <md-dialog-actions class="s1-U__pd16 s1-U__pd--tp0 s1-U__text-align--right">
         <md-button
           class="md-primary s1-md-bordered"
           @click="setActivePage('users-overvie')"

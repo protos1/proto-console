@@ -26,7 +26,7 @@
       </md-button>
     </div>
     <section class="s1-U__pd--tp16">
-      <md-card class="s1-U__pd16 s1-U__mg--bt8" v-for="user in users" v-bind:key="user.id">
+      <md-card class="s1-U__pd16 s1-U__mg--bt16" v-for="user in users" v-bind:key="user.id">
         <div
           class="s1-U__align-children--center s1-U__justify-content--space-between s1-U__full-width"
         >
@@ -148,7 +148,7 @@
                 </tr>
               </table>
             </div>
-            <div class="md-layout-item s1-U__mg--bt16">
+            <!-- <div class="md-layout-item s1-U__mg--bt16">
               <h3 class="s1-U__mg--bt8 s1-U__mg--bt16">Sem acesso às aplicações:</h3>
               <div class="s1-U__align-children--center s1-U__mg--bt8">
                 <img
@@ -166,53 +166,59 @@
                 >
                 <p class="md-body-2 s1-U__mg--lt8">Console</p>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </md-card>
     </section>
     <md-dialog :md-active.sync="showPasswordDialog">
-      <md-content>
-        <h2 class="s1-U__fw--300 s1-U__mg--bt32 s1-U__mg--tp16">Alteração de senha</h2>
-        <p class="s1-U__mg--bt16 s1-U__width--300px">Nova senha para usuário</p>
-        <p class="md-subheading s1-U__mg--bt16">
-          <b>cromat</b>
-          <b class="s1-U__text-color--dark-2">@icatu</b>
-        </p>
-        <div class="s1-U__pd--bt32 s1-U__pd--lt16">
-          <ul class="s1-U__mg0 s1-U__pd0">
-            <li>Mínimo 8 digitos;</li>
-            <li>pelo menos 1 caractere especial;</li>
-            <li>pelo menos 1 letra maiúscula</li>
-          </ul>
+      <md-content class="s1-U__pd0">
+        <div class="s1-U__pd16">
+          <div class="md-title">Alteração de senha</div>
         </div>
-        <div class="s1-U__mg--bt8">
-          <div class="s1-loc__md-field-wrapper s1-U__width--240px">
-            <md-field>
-              <label>Senha atual</label>
-              <md-input
-                v-model="form.Password"
-                id="current-password"
-                name="current-password"
-                type="password"
-                required
-              />
-            </md-field>
+        <md-divider/>
+        <div class="s1-U__pd16">
+          <p class="s1-U__mg--bt16 s1-U__width--300px">Nova senha para usuário</p>
+          <p class="md-subheading s1-U__mg--bt16">
+            <b>cromat</b>
+            <b class="s1-U__text-color--dark-2">@icatu</b>
+          </p>
+          <div class="s1-U__pd--bt32 s1-U__pd--lt16">
+            <ul class="s1-U__mg0 s1-U__pd0">
+              <li>Mínimo 8 digitos;</li>
+              <li>pelo menos 1 caractere especial;</li>
+              <li>pelo menos 1 letra maiúscula</li>
+            </ul>
           </div>
-          <div class="s1-loc__md-field-wrapper s1-U__width--240px">
-            <md-field :disabled="form.Password">
-              <label>Nova senha</label>
-              <md-input v-model="form.NewPassword" type="password" required/>
-            </md-field>
-          </div>
-          <div class="s1-loc__md-field-wrapper s1-U__width--240px">
-            <md-field>
-              <label>Confirmar senha</label>
-              <md-input v-model="form.ConfirmPassword" type="password" required/>
-            </md-field>
+          <div class="s1-U__mg--bt8">
+            <div class="s1-loc__md-field-wrapper s1-U__width--240px">
+              <md-field>
+                <label>Senha atual</label>
+                <md-input
+                  v-model="form.Password"
+                  id="current-password"
+                  name="current-password"
+                  type="password"
+                  required
+                />
+              </md-field>
+            </div>
+            <div class="s1-loc__md-field-wrapper s1-U__width--240px">
+              <md-field :disabled="form.Password">
+                <label>Nova senha</label>
+                <md-input v-model="form.NewPassword" type="password" required/>
+              </md-field>
+            </div>
+            <div class="s1-loc__md-field-wrapper s1-U__width--240px">
+              <md-field>
+                <label>Confirmar senha</label>
+                <md-input v-model="form.ConfirmPassword" type="password" required/>
+              </md-field>
+            </div>
           </div>
         </div>
       </md-content>
+      <md-divider/>
       <md-dialog-actions class="s1-U__pd16 s1-U__text-align--right">
         <md-button
           class="s1-md-bordered s1-U__mg--rt8"
@@ -225,6 +231,22 @@
         >alterar senha</md-button>
       </md-dialog-actions>
     </md-dialog>
+    <div class="md-layout md-alignment-center-center s1-U__mg--tp32">
+      <div class="s1-U__align-children--center">
+        <b>1 - 10</b>
+        <span class="s1-U__mg--rt4 s1-U__mg--lt4">de</span>
+        <b>167</b>
+        <span class="s1-U__mg--lt4">usuários</span>
+        <md-button
+          class="s1-md-bordered squared md-primary md-icon-button s1-U__mg--lt8 s1-U__mg--rt8"
+        >
+          <md-icon>keyboard_arrow_left</md-icon>
+        </md-button>
+        <md-button class="s1-md-bordered squared md-primary md-icon-button">
+          <md-icon>keyboard_arrow_right</md-icon>
+        </md-button>
+      </div>
+    </div>
   </div>
 </template>
 

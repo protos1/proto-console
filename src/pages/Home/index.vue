@@ -75,7 +75,7 @@
         <div class="s1-U__pd--lt16 s1-U__pd--rt16" v-show="form.accountToEdit">
           <div class="s1-loc__md-field-wrapper s1-U__width--300px">
             <md-field>
-              <label for="country-code">Perfil</label>
+              <label for="country-code">Aplicação</label>
               <md-select
                 v-model="form.appToEdit"
                 name="app-to-edit"

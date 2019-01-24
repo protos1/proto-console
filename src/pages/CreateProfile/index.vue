@@ -54,7 +54,7 @@ export default {
       Name: "",
       ProdutosObter: false,
       ProdutosObterLista: false,
-      ProdutosCriar: true,
+      ProdutosCriar: false,
       ProdutosAdicionarImagem: false,
       ProdutosRemoverImagem: false,
       ProdutosObterConfiguração: false,

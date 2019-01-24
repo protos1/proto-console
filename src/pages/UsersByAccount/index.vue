@@ -66,8 +66,8 @@
                       <md-menu-item
                         @click="setActivePage('edit-user-to-app')"
                       >Editar dados do usuário</md-menu-item>
-                      <md-menu-item @click="showPasswordDialog = true">Alterar senha</md-menu-item>
                       <md-divider class="s1-U__mg--tp8 s1-U__mg--bt8"></md-divider>
+                      <md-menu-item @click="showPasswordDialog = true">Alterar senha</md-menu-item>
                       <md-menu-item @click="showEditUserProfileShortcutDialog()">Editar perfil</md-menu-item>
                     </md-menu-content>
                   </md-menu>
@@ -86,6 +86,23 @@
                   </div>
                 </div>
               </md-card>
+            </div>
+          </div>
+          <div class="md-layout md-alignment-center-center s1-U__mg--tp32">
+            <div class="s1-U__align-children--center">
+              <b>1 - 10</b>
+              <span class="s1-U__mg--rt4 s1-U__mg--lt4">de</span>
+              <b>10</b>
+              <span class="s1-U__mg--lt4">usuários</span>
+              <md-button
+                class="s1-md-bordered squared md-primary md-icon-button s1-U__mg--lt8 s1-U__mg--rt8"
+                disabled
+              >
+                <md-icon>keyboard_arrow_left</md-icon>
+              </md-button>
+              <md-button class="s1-md-bordered squared md-primary md-icon-button" disabled>
+                <md-icon>keyboard_arrow_right</md-icon>
+              </md-button>
             </div>
           </div>
         </md-tab>
@@ -234,42 +251,58 @@
               </tbody>
             </table>
           </md-card>
-          <div
-            v-show="profileVisualization == 'profileList'"
-            class="md-layout md-gutter s1-md-layout--mini"
-          >
-            <div
-              class="md-layout-item md-xsmall-size-100 md-small-size-100 md-medium-size-50 md-large-size-33 md-xlarge-size-25 s1-U__mg--bt16"
-              v-for="profile in allProfiles"
-              v-bind:key="profile.Id + '-zuasdajsk'"
-            >
-              <md-card>
-                <div class="s1-U__pd16">
-                  <div class="s1-U__align-children--center s1-U__justify-content--space-between">
-                    <div class="s1-U__align-children--center">
-                      <md-icon class="s1-U__mg--rt8 md-primary">account_box</md-icon>
-                      <p class="md-subheading">{{profile.Name}}</p>
-                    </div>
-                    <md-menu md-direction="bottom-end">
-                      <md-button class="md-dense squared md-icon-button" md-menu-trigger>
-                        <md-icon>more_vert</md-icon>
-                      </md-button>
+          <div v-show="profileVisualization == 'profileList'">
+            <div class="md-layout md-gutter s1-md-layout--mini">
+              <div
+                class="md-layout-item md-xsmall-size-100 md-small-size-100 md-medium-size-50 md-large-size-33 md-xlarge-size-25 s1-U__mg--bt16"
+                v-for="profile in allProfiles"
+                v-bind:key="profile.Id + '-zuasdajsk'"
+              >
+                <md-card>
+                  <div class="s1-U__pd16">
+                    <div class="s1-U__align-children--center s1-U__justify-content--space-between">
+                      <div class="s1-U__align-children--center">
+                        <md-icon class="s1-U__mg--rt8 md-primary">account_box</md-icon>
+                        <p class="md-subheading">{{profile.Name}}</p>
+                      </div>
+                      <md-menu md-direction="bottom-end">
+                        <md-button class="md-dense squared md-icon-button" md-menu-trigger>
+                          <md-icon>more_vert</md-icon>
+                        </md-button>
 
-                      <md-menu-content>
-                        <md-menu-item @click="setActivePage('edit-profile')">Editar</md-menu-item>
-                        <md-menu-item @click="openMezzanine()">Ver detalhes</md-menu-item>
-                      </md-menu-content>
-                    </md-menu>
+                        <md-menu-content>
+                          <md-menu-item @click="setActivePage('edit-profile')">Editar</md-menu-item>
+                          <md-menu-item @click="openMezzanine()">Ver detalhes</md-menu-item>
+                        </md-menu-content>
+                      </md-menu>
+                    </div>
+                    <div class="s1-U__pd--lt32">
+                      <p
+                        class="md-caption"
+                        v-if="profile.Users.length > 0"
+                      >{{profile.Users.length}} Usuários</p>
+                      <p class="md-caption" v-else>Nenhum usuário</p>
+                    </div>
                   </div>
-                  <div class="s1-U__pd--lt32">
-                    <p
-                      class="md-caption"
-                      v-if="profile.Users.length > 0"
-                    >{{profile.Users.length}} Usuários</p>
-                    <p class="md-caption" v-else>Nenhum usuário</p>
-                  </div>
-                </div>
-              </md-card>
+                </md-card>
+              </div>
+            </div>
+            <div class="md-layout md-alignment-center-center s1-U__mg--tp32">
+              <div class="s1-U__align-children--center">
+                <b>1 - 7</b>
+                <span class="s1-U__mg--rt4 s1-U__mg--lt4">de</span>
+                <b>7</b>
+                <span class="s1-U__mg--lt4">perfis</span>
+                <md-button
+                  class="s1-md-bordered squared md-primary md-icon-button s1-U__mg--lt8 s1-U__mg--rt8"
+                  disabled
+                >
+                  <md-icon>keyboard_arrow_left</md-icon>
+                </md-button>
+                <md-button class="s1-md-bordered squared md-primary md-icon-button" disabled>
+                  <md-icon>keyboard_arrow_right</md-icon>
+                </md-button>
+              </div>
             </div>
           </div>
         </md-tab>
@@ -309,47 +342,53 @@
       </md-dialog>
     </section>
     <md-dialog :md-active.sync="showPasswordDialog">
-      <md-content>
-        <h2 class="s1-U__fw--300 s1-U__mg--bt32 s1-U__mg--tp16">Alteração de senha</h2>
-        <p class="s1-U__mg--bt16 s1-U__width--300px">Nova senha para usuário</p>
-        <p class="md-subheading s1-U__mg--bt16">
-          <b>cromat</b>
-          <b class="s1-U__text-color--dark-2">@icatu</b>
-        </p>
-        <div class="s1-U__pd--bt32 s1-U__pd--lt16">
-          <ul class="s1-U__mg0 s1-U__pd0">
-            <li>Mínimo 8 digitos;</li>
-            <li>pelo menos 1 caractere especial;</li>
-            <li>pelo menos 1 letra maiúscula</li>
-          </ul>
+      <md-content class="s1-U__pd0">
+        <div class="s1-U__pd16">
+          <div class="md-title">Alteração de senha</div>
         </div>
-        <div class="s1-U__mg--bt8">
-          <div class="s1-loc__md-field-wrapper s1-U__width--240px">
-            <md-field>
-              <label>Senha atual</label>
-              <md-input
-                v-model="form.Password"
-                id="current-password"
-                name="current-password"
-                type="password"
-                required
-              />
-            </md-field>
+        <md-divider/>
+        <div class="s1-U__pd16">
+          <p class="s1-U__mg--bt16 s1-U__width--300px">Nova senha para usuário</p>
+          <p class="md-subheading s1-U__mg--bt16">
+            <b>cromat</b>
+            <b class="s1-U__text-color--dark-2">@icatu</b>
+          </p>
+          <div class="s1-U__pd--bt32 s1-U__pd--lt16">
+            <ul class="s1-U__mg0 s1-U__pd0">
+              <li>Mínimo 8 digitos;</li>
+              <li>pelo menos 1 caractere especial;</li>
+              <li>pelo menos 1 letra maiúscula</li>
+            </ul>
           </div>
-          <div class="s1-loc__md-field-wrapper s1-U__width--240px">
-            <md-field :disabled="form.Password">
-              <label>Nova senha</label>
-              <md-input v-model="form.NewPassword" type="password" required/>
-            </md-field>
-          </div>
-          <div class="s1-loc__md-field-wrapper s1-U__width--240px">
-            <md-field>
-              <label>Confirmar senha</label>
-              <md-input v-model="form.ConfirmPassword" type="password" required/>
-            </md-field>
+          <div class="s1-U__mg--bt8">
+            <div class="s1-loc__md-field-wrapper s1-U__width--240px">
+              <md-field>
+                <label>Senha atual</label>
+                <md-input
+                  v-model="form.Password"
+                  id="current-password"
+                  name="current-password"
+                  type="password"
+                  required
+                />
+              </md-field>
+            </div>
+            <div class="s1-loc__md-field-wrapper s1-U__width--240px">
+              <md-field :disabled="form.Password">
+                <label>Nova senha</label>
+                <md-input v-model="form.NewPassword" type="password" required/>
+              </md-field>
+            </div>
+            <div class="s1-loc__md-field-wrapper s1-U__width--240px">
+              <md-field>
+                <label>Confirmar senha</label>
+                <md-input v-model="form.ConfirmPassword" type="password" required/>
+              </md-field>
+            </div>
           </div>
         </div>
       </md-content>
+      <md-divider/>
       <md-dialog-actions class="s1-U__pd16 s1-U__text-align--right">
         <md-button
           class="s1-md-bordered s1-U__mg--rt8"

@@ -119,7 +119,9 @@
       <md-content>
         <p>
           Deseja configurar agora o perfil de acesso a
-          <b>Icatu MV/ Vendas</b>?
+          <b>Icatu MV/ Vendas</b>? Sem acesso ao
+          <b>Accounts</b>, por exemplo, o usuário será
+          <b>incapaz de fazer login.</b>
         </p>
       </md-content>
       <md-dialog-actions class="s1-U__pd16 s1-U__pd--tp0 s1-U__text-align--right">

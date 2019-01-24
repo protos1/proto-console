@@ -12,13 +12,13 @@
           >cadastrar conta</md-button>
         </div>
       </div>
-      <div class="s1-U__align-children--center s1-U__justify-content--space-between s1-U__pd--bt16">
-        <md-button class="s1-md-bordered">
+      <div class="s1-U__align-children--center s1-U__justify-content--flex-end s1-U__pd--bt16">
+        <!-- <md-button class="s1-md-bordered">
           <div class="s1-U__align-children--center s1-U__pd--rt8">
             <md-icon class="s1-U__mg--rt8">filter_list</md-icon>
             <span>Filtros</span>
           </div>
-        </md-button>
+        </md-button>-->
         <div class="s1-loc__md-field-wrapper s1-U__width--240px">
           <md-field class="s1-U__mg0">
             <md-input class="s1-U__full-width" v-model="search" placeholder="Buscar conta"/>
