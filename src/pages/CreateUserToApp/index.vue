@@ -70,20 +70,20 @@
               @click="setShowPasswordDialog"
             >alterar senha</md-button>-->
           </div>
-          <!-- <h3 class="md-title s1-U__pd--tp32 s1-U__text-color--primary">Perfis de acesso</h3>
-          <p class="s1-U__pd--tp8 s1-U__mg--bt16 md-caption">
+          <h3 class="md-title s1-U__pd--tp32 s1-U__text-color--primary">Perfis de acesso</h3>
+          <!--<p class="s1-U__pd--tp8 s1-U__mg--bt16 md-caption">
             Para ter acesso ao sistema, o usuário precisa de pelo menos
             <b>um perfil</b> em
             <b>uma conta</b> para login.
           </p>-->
-          <!-- <div class="s1-U__pd--lt16">
+          <div class="s1-U__pd--lt16 s1-U__mg--tp16">
             <div class="s1-U__align-children--center s1-U__mg--tp8 s1-U__mg--bt16">
               <img
-                src="https://s1-cdn-brazilsouth.azureedge.net/accounts.svg"
+                src="https://s1-cdn-brazilsouth.azureedge.net/sales.svg"
                 style="width: 24px; height: 24px;"
                 alt
               >
-              <p class="md-body-2 s1-U__mg--lt8">Accounts</p>
+              <p class="md-body-2 s1-U__mg--lt8">Vendas</p>
             </div>
             <div class="s1-U__width--320px">
               <table class="s1-U__full-width" style="border-spacing: 0">
@@ -107,7 +107,7 @@
                 </tr>
               </table>
             </div>
-          </div>-->
+          </div>
         </div>
       </md-card-content>
 
