@@ -46,7 +46,7 @@
             </md-button>
             <md-menu-content>
               <md-menu-item @click="setActivePage('edit-account')">Editar conta</md-menu-item>
-              <md-divider class="s1-U__mg--tp16 s1-U__mg--bt16"/>
+              <md-divider class="s1-U__mg--tp8 s1-U__mg--bt8"/>
               <md-menu-item @click="showApplicationsDialog = true">Aplicações</md-menu-item>
             </md-menu-content>
           </md-menu>
@@ -139,7 +139,7 @@
             </md-button>
             <md-menu-content>
               <md-menu-item @click="setActivePage('edit-account')">Editar conta</md-menu-item>
-              <md-divider class="s1-U__mg--tp16 s1-U__mg--bt16"/>
+              <md-divider class="s1-U__mg--tp8 s1-U__mg--bt8"/>
               <md-menu-item @click="showApplicationsDialog = true">Aplicações</md-menu-item>
             </md-menu-content>
           </md-menu>
