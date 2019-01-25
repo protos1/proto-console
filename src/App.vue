@@ -368,9 +368,6 @@ export default {
     max-width: 900px;
   }
 }
-div.md-field {
-  margin-bottom: 16px;
-}
 
 .s1-mezzanine-wrapper.mezzanine-is-active + .s1-loc__my-account-panel {
   z-index: -1;

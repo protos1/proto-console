@@ -12,8 +12,8 @@
               @click="action.goTo()"
               class="s1-U__pd--tp32 s1-U__pd--bt32 s1-U__pd--lt16 s1-U__pd--rt16 s1-U__text-align--center"
             >
-              <div class="s1-shortcut-icon s1-U__pd16 s1-U__text-color--primary">
-                <div class="s1-shortcut-icon__circle"/>
+              <div class="s1--loc__shortcut-icon s1-U__pd16 s1-U__text-color--primary">
+                <div class="s1--loc__shortcut-icon__circle"/>
                 <md-icon class="md-size-2x md-primary">
                   <span>{{ action.icon }}</span>
                 </md-icon>
@@ -214,7 +214,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.s1-shortcut-icon {
+.s1--loc__shortcut-icon {
   position: relative;
   display: inline-block;
 
