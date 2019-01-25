@@ -181,7 +181,7 @@
             </md-button>
           </div>
         </div>
-        <div class="s1-U__pd--lt16 s1-U__mg--bt32">
+        <!-- <div class="s1-U__pd--lt16 s1-U__mg--bt32">
           <h3 class="s1-U__mg--bt16">Sem acesso às aplicações:</h3>
           <div class="s1-U__align-children--center s1-U__mg--bt8">
             <img
@@ -199,7 +199,7 @@
             >
             <p class="md-body-2 s1-U__mg--lt8">Analytics</p>
           </div>
-        </div>
+        </div> -->
       </md-card-content>
       <md-card-actions class="s1-U__pd16">
         <md-button class="md-primary md-raised">Salvar</md-button>

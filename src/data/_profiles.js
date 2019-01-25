@@ -36,104 +36,104 @@ export default [
       }
     ],
     Actions: {
-      "Produtos - Obter": { Id: "Produtos - Obter-AUSYSY", Active: true },
+      "Produtos - Obter": { Id: "Produtos - Obter", Active: true },
       "Produtos - Obter Lista": {
-        Id: "Produtos - Obter Lista-AUSYSY",
+        Id: "Produtos - Obter Lista",
         Active: false
       },
-      "Produtos - Criar": { Id: "Produtos - Criar-AUSYSY", Active: false },
+      "Produtos - Criar": { Id: "Produtos - Criar", Active: false },
       "Produtos - Adicionar Imagem": {
-        Id: "Produtos - Adicionar Imagem-AUSYSY",
+        Id: "Produtos - Adicionar Imagem",
         Active: false
       },
       "Produtos - Remover Imagem": {
-        Id: "Produtos - Remover Imagem-AUSYSY",
+        Id: "Produtos - Remover Imagem",
         Active: true
       },
       "Produtos - Obter Configuração": {
-        Id: "Produtos - Obter Configuração-AUSYSY",
+        Id: "Produtos - Obter Configuração",
         Active: true
       },
       "Produtos - Atualizar configuração": {
-        Id: "Produtos - Atualizar configuração-AUSYSY",
+        Id: "Produtos - Atualizar configuração",
         Active: false
       },
       "Produtos - Testar certificado": {
-        Id: "Produtos - Testar certificado-AUSYSY",
+        Id: "Produtos - Testar certificado",
         Active: false
       },
       "Produtos - Testar comunicação": {
-        Id: "Produtos - Testar comunicação-AUSYSY",
+        Id: "Produtos - Testar comunicação",
         Active: true
       },
       "Produtos - Descontinuar": {
-        Id: "Produtos - Descontinuar-AUSYSY",
+        Id: "Produtos - Descontinuar",
         Active: true
       },
-      "Produtos - Publicar": { Id: "Produtos - Publicar-AUSYSY", Active: true },
-      "Tags - Obter": { Id: "Tags - Obter-AUSYSY", Active: true },
-      "Tags - Obter Lista": { Id: "Tags - Obter Lista-AUSYSY", Active: true },
-      "Publicações - Obter": { Id: "Publicações - Obter-AUSYSY", Active: true },
+      "Produtos - Publicar": { Id: "Produtos - Publicar", Active: true },
+      "Tags - Obter": { Id: "Tags - Obter", Active: true },
+      "Tags - Obter Lista": { Id: "Tags - Obter Lista", Active: true },
+      "Publicações - Obter": { Id: "Publicações - Obter", Active: true },
       "Publicações - Obter Lista": {
-        Id: "Publicações - Obter Lista-AUSYSY",
+        Id: "Publicações - Obter Lista",
         Active: true
       },
-      "Publicações - Criar": { Id: "Publicações - Criar-AUSYSY", Active: true },
-      "Cliente - Obter": { Id: "Cliente - Obter-AUSYSY", Active: true },
+      "Publicações - Criar": { Id: "Publicações - Criar", Active: true },
+      "Cliente - Obter": { Id: "Cliente - Obter", Active: true },
       "Cliente - Obter Lista": {
-        Id: "Cliente - Obter Lista-AUSYSY",
+        Id: "Cliente - Obter Lista",
         Active: true
       },
-      "Cliente - Criar": { Id: "Cliente - Criar-AUSYSY", Active: true },
-      "Cliente - Atualizar": { Id: "Cliente - Atualizar-AUSYSY", Active: true },
-      "Endereços - Obter": { Id: "Endereços - Obter-AUSYSY", Active: true },
+      "Cliente - Criar": { Id: "Cliente - Criar", Active: true },
+      "Cliente - Atualizar": { Id: "Cliente - Atualizar", Active: true },
+      "Endereços - Obter": { Id: "Endereços - Obter", Active: true },
       "Endereços - Obter Lista": {
-        Id: "Endereços - Obter Lista-AUSYSY",
+        Id: "Endereços - Obter Lista",
         Active: true
       },
-      "Endereços - Criar": { Id: "Endereços - Criar-AUSYSY", Active: true },
+      "Endereços - Criar": { Id: "Endereços - Criar", Active: true },
       "Endereços - Atualizar": {
-        Id: "Endereços - Atualizar-AUSYSY",
+        Id: "Endereços - Atualizar",
         Active: false
       },
       "Endereços - Excluir": {
-        Id: "Endereços - Excluir-AUSYSY",
+        Id: "Endereços - Excluir",
         Active: false
       },
       "Comunicações - Obter": {
-        Id: "Comunicações - Obter-AUSYSY",
+        Id: "Comunicações - Obter",
         Active: false
       },
       "Comunicações - Obter Lista": {
-        Id: "Comunicações - Obter Lista-AUSYSY",
+        Id: "Comunicações - Obter Lista",
         Active: true
       },
       "Comunicações - Criar": {
-        Id: "Comunicações - Criar-AUSYSY",
+        Id: "Comunicações - Criar",
         Active: true
       },
       "Comunicações - Obter Lista de Variáveis": {
-        Id: "Comunicações - Obter Lista de Variáveis-AUSYSY",
+        Id: "Comunicações - Obter Lista de Variáveis",
         Active: true
       },
-      "Pagamentos - Obter": { Id: "Pagamentos - Obter-AUSYSY", Active: true },
+      "Pagamentos - Obter": { Id: "Pagamentos - Obter", Active: true },
       "Pagamentos - Obter Lista": {
-        Id: "Pagamentos - Obter Lista-AUSYSY",
+        Id: "Pagamentos - Obter Lista",
         Active: true
       },
-      "Pagamentos - Criar": { Id: "Pagamentos - Criar-AUSYSY", Active: true },
-      "Vendas - Obter": { Id: "Vendas - Obter-AUSYSY", Active: true },
+      "Pagamentos - Criar": { Id: "Pagamentos - Criar", Active: true },
+      "Vendas - Obter": { Id: "Vendas - Obter", Active: true },
       "Vendas - Obter Lista": {
-        Id: "Vendas - Obter Lista-AUSYSY",
+        Id: "Vendas - Obter Lista",
         Active: true
       },
-      "Vendas - Criar": { Id: "Vendas - Criar-AUSYSY", Active: true },
+      "Vendas - Criar": { Id: "Vendas - Criar", Active: true },
       "Vendas - Obter Certificado": {
-        Id: "Vendas - Obter Certificado-AUSYSY",
+        Id: "Vendas - Obter Certificado",
         Active: true
       },
       "Vendas - Envio de certificado": {
-        Id: "Vendas - Envio de certificado-AUSYSY",
+        Id: "Vendas - Envio de certificado",
         Active: false
       }
     }
@@ -157,110 +157,110 @@ export default [
       }
     ],
     Actions: {
-      "Produtos - Obter": { Id: "Produtos - Obter-AUSYSY", Active: false },
+      "Produtos - Obter": { Id: "Produtos - Obter", Active: false },
       "Produtos - Obter Lista": {
-        Id: "Produtos - Obter Lista-AUSYSY",
+        Id: "Produtos - Obter Lista",
         Active: false
       },
-      "Produtos - Criar": { Id: "Produtos - Criar-AUSYSY", Active: false },
+      "Produtos - Criar": { Id: "Produtos - Criar", Active: false },
       "Produtos - Adicionar Imagem": {
-        Id: "Produtos - Adicionar Imagem-AUSYSY",
+        Id: "Produtos - Adicionar Imagem",
         Active: false
       },
       "Produtos - Remover Imagem": {
-        Id: "Produtos - Remover Imagem-AUSYSY",
+        Id: "Produtos - Remover Imagem",
         Active: false
       },
       "Produtos - Obter Configuração": {
-        Id: "Produtos - Obter Configuração-AUSYSY",
+        Id: "Produtos - Obter Configuração",
         Active: false
       },
       "Produtos - Atualizar configuração": {
-        Id: "Produtos - Atualizar configuração-AUSYSY",
+        Id: "Produtos - Atualizar configuração",
         Active: false
       },
       "Produtos - Testar certificado": {
-        Id: "Produtos - Testar certificado-AUSYSY",
+        Id: "Produtos - Testar certificado",
         Active: true
       },
       "Produtos - Testar comunicação": {
-        Id: "Produtos - Testar comunicação-AUSYSY",
+        Id: "Produtos - Testar comunicação",
         Active: true
       },
       "Produtos - Descontinuar": {
-        Id: "Produtos - Descontinuar-AUSYSY",
+        Id: "Produtos - Descontinuar",
         Active: true
       },
-      "Produtos - Publicar": { Id: "Produtos - Publicar-AUSYSY", Active: true },
-      "Tags - Obter": { Id: "Tags - Obter-AUSYSY", Active: true },
-      "Tags - Obter Lista": { Id: "Tags - Obter Lista-AUSYSY", Active: true },
-      "Publicações - Obter": { Id: "Publicações - Obter-AUSYSY", Active: true },
+      "Produtos - Publicar": { Id: "Produtos - Publicar", Active: true },
+      "Tags - Obter": { Id: "Tags - Obter", Active: true },
+      "Tags - Obter Lista": { Id: "Tags - Obter Lista", Active: true },
+      "Publicações - Obter": { Id: "Publicações - Obter", Active: true },
       "Publicações - Obter Lista": {
-        Id: "Publicações - Obter Lista-AUSYSY",
+        Id: "Publicações - Obter Lista",
         Active: false
       },
       "Publicações - Criar": {
-        Id: "Publicações - Criar-AUSYSY",
+        Id: "Publicações - Criar",
         Active: false
       },
-      "Cliente - Obter": { Id: "Cliente - Obter-AUSYSY", Active: false },
+      "Cliente - Obter": { Id: "Cliente - Obter", Active: false },
       "Cliente - Obter Lista": {
-        Id: "Cliente - Obter Lista-AUSYSY",
+        Id: "Cliente - Obter Lista",
         Active: false
       },
-      "Cliente - Criar": { Id: "Cliente - Criar-AUSYSY", Active: false },
+      "Cliente - Criar": { Id: "Cliente - Criar", Active: false },
       "Cliente - Atualizar": {
-        Id: "Cliente - Atualizar-AUSYSY",
+        Id: "Cliente - Atualizar",
         Active: false
       },
-      "Endereços - Obter": { Id: "Endereços - Obter-AUSYSY", Active: false },
+      "Endereços - Obter": { Id: "Endereços - Obter", Active: false },
       "Endereços - Obter Lista": {
-        Id: "Endereços - Obter Lista-AUSYSY",
+        Id: "Endereços - Obter Lista",
         Active: false
       },
-      "Endereços - Criar": { Id: "Endereços - Criar-AUSYSY", Active: false },
+      "Endereços - Criar": { Id: "Endereços - Criar", Active: false },
       "Endereços - Atualizar": {
-        Id: "Endereços - Atualizar-AUSYSY",
+        Id: "Endereços - Atualizar",
         Active: false
       },
       "Endereços - Excluir": {
-        Id: "Endereços - Excluir-AUSYSY",
+        Id: "Endereços - Excluir",
         Active: false
       },
       "Comunicações - Obter": {
-        Id: "Comunicações - Obter-AUSYSY",
+        Id: "Comunicações - Obter",
         Active: false
       },
       "Comunicações - Obter Lista": {
-        Id: "Comunicações - Obter Lista-AUSYSY",
+        Id: "Comunicações - Obter Lista",
         Active: true
       },
       "Comunicações - Criar": {
-        Id: "Comunicações - Criar-AUSYSY",
+        Id: "Comunicações - Criar",
         Active: true
       },
       "Comunicações - Obter Lista de Variáveis": {
-        Id: "Comunicações - Obter Lista de Variáveis-AUSYSY",
+        Id: "Comunicações - Obter Lista de Variáveis",
         Active: true
       },
-      "Pagamentos - Obter": { Id: "Pagamentos - Obter-AUSYSY", Active: true },
+      "Pagamentos - Obter": { Id: "Pagamentos - Obter", Active: true },
       "Pagamentos - Obter Lista": {
-        Id: "Pagamentos - Obter Lista-AUSYSY",
+        Id: "Pagamentos - Obter Lista",
         Active: false
       },
-      "Pagamentos - Criar": { Id: "Pagamentos - Criar-AUSYSY", Active: false },
-      "Vendas - Obter": { Id: "Vendas - Obter-AUSYSY", Active: false },
+      "Pagamentos - Criar": { Id: "Pagamentos - Criar", Active: false },
+      "Vendas - Obter": { Id: "Vendas - Obter", Active: false },
       "Vendas - Obter Lista": {
-        Id: "Vendas - Obter Lista-AUSYSY",
+        Id: "Vendas - Obter Lista",
         Active: true
       },
-      "Vendas - Criar": { Id: "Vendas - Criar-AUSYSY", Active: true },
+      "Vendas - Criar": { Id: "Vendas - Criar", Active: true },
       "Vendas - Obter Certificado": {
-        Id: "Vendas - Obter Certificado-AUSYSY",
+        Id: "Vendas - Obter Certificado",
         Active: true
       },
       "Vendas - Envio de certificado": {
-        Id: "Vendas - Envio de certificado-AUSYSY",
+        Id: "Vendas - Envio de certificado",
         Active: true
       }
     }
@@ -290,116 +290,116 @@ export default [
       }
     ],
     Actions: {
-      "Produtos - Obter": { Id: "Produtos - Obter-AUSYSY", Active: true },
+      "Produtos - Obter": { Id: "Produtos - Obter", Active: true },
       "Produtos - Obter Lista": {
-        Id: "Produtos - Obter Lista-AUSYSY",
+        Id: "Produtos - Obter Lista",
         Active: false
       },
-      "Produtos - Criar": { Id: "Produtos - Criar-AUSYSY", Active: false },
+      "Produtos - Criar": { Id: "Produtos - Criar", Active: false },
       "Produtos - Adicionar Imagem": {
-        Id: "Produtos - Adicionar Imagem-AUSYSY",
+        Id: "Produtos - Adicionar Imagem",
         Active: true
       },
       "Produtos - Remover Imagem": {
-        Id: "Produtos - Remover Imagem-AUSYSY",
+        Id: "Produtos - Remover Imagem",
         Active: true
       },
       "Produtos - Obter Configuração": {
-        Id: "Produtos - Obter Configuração-AUSYSY",
+        Id: "Produtos - Obter Configuração",
         Active: true
       },
       "Produtos - Atualizar configuração": {
-        Id: "Produtos - Atualizar configuração-AUSYSY",
+        Id: "Produtos - Atualizar configuração",
         Active: false
       },
       "Produtos - Testar certificado": {
-        Id: "Produtos - Testar certificado-AUSYSY",
+        Id: "Produtos - Testar certificado",
         Active: false
       },
       "Produtos - Testar comunicação": {
-        Id: "Produtos - Testar comunicação-AUSYSY",
+        Id: "Produtos - Testar comunicação",
         Active: false
       },
       "Produtos - Descontinuar": {
-        Id: "Produtos - Descontinuar-AUSYSY",
+        Id: "Produtos - Descontinuar",
         Active: false
       },
       "Produtos - Publicar": {
-        Id: "Produtos - Publicar-AUSYSY",
+        Id: "Produtos - Publicar",
         Active: false
       },
-      "Tags - Obter": { Id: "Tags - Obter-AUSYSY", Active: false },
-      "Tags - Obter Lista": { Id: "Tags - Obter Lista-AUSYSY", Active: false },
+      "Tags - Obter": { Id: "Tags - Obter", Active: false },
+      "Tags - Obter Lista": { Id: "Tags - Obter Lista", Active: false },
       "Publicações - Obter": {
-        Id: "Publicações - Obter-AUSYSY",
+        Id: "Publicações - Obter",
         Active: false
       },
       "Publicações - Obter Lista": {
-        Id: "Publicações - Obter Lista-AUSYSY",
+        Id: "Publicações - Obter Lista",
         Active: false
       },
       "Publicações - Criar": {
-        Id: "Publicações - Criar-AUSYSY",
+        Id: "Publicações - Criar",
         Active: false
       },
-      "Cliente - Obter": { Id: "Cliente - Obter-AUSYSY", Active: false },
+      "Cliente - Obter": { Id: "Cliente - Obter", Active: false },
       "Cliente - Obter Lista": {
-        Id: "Cliente - Obter Lista-AUSYSY",
+        Id: "Cliente - Obter Lista",
         Active: false
       },
-      "Cliente - Criar": { Id: "Cliente - Criar-AUSYSY", Active: false },
+      "Cliente - Criar": { Id: "Cliente - Criar", Active: false },
       "Cliente - Atualizar": {
-        Id: "Cliente - Atualizar-AUSYSY",
+        Id: "Cliente - Atualizar",
         Active: false
       },
-      "Endereços - Obter": { Id: "Endereços - Obter-AUSYSY", Active: false },
+      "Endereços - Obter": { Id: "Endereços - Obter", Active: false },
       "Endereços - Obter Lista": {
-        Id: "Endereços - Obter Lista-AUSYSY",
+        Id: "Endereços - Obter Lista",
         Active: false
       },
-      "Endereços - Criar": { Id: "Endereços - Criar-AUSYSY", Active: false },
+      "Endereços - Criar": { Id: "Endereços - Criar", Active: false },
       "Endereços - Atualizar": {
-        Id: "Endereços - Atualizar-AUSYSY",
+        Id: "Endereços - Atualizar",
         Active: false
       },
       "Endereços - Excluir": {
-        Id: "Endereços - Excluir-AUSYSY",
+        Id: "Endereços - Excluir",
         Active: false
       },
       "Comunicações - Obter": {
-        Id: "Comunicações - Obter-AUSYSY",
+        Id: "Comunicações - Obter",
         Active: false
       },
       "Comunicações - Obter Lista": {
-        Id: "Comunicações - Obter Lista-AUSYSY",
+        Id: "Comunicações - Obter Lista",
         Active: false
       },
       "Comunicações - Criar": {
-        Id: "Comunicações - Criar-AUSYSY",
+        Id: "Comunicações - Criar",
         Active: false
       },
       "Comunicações - Obter Lista de Variáveis": {
-        Id: "Comunicações - Obter Lista de Variáveis-AUSYSY",
+        Id: "Comunicações - Obter Lista de Variáveis",
         Active: true
       },
-      "Pagamentos - Obter": { Id: "Pagamentos - Obter-AUSYSY", Active: true },
+      "Pagamentos - Obter": { Id: "Pagamentos - Obter", Active: true },
       "Pagamentos - Obter Lista": {
-        Id: "Pagamentos - Obter Lista-AUSYSY",
+        Id: "Pagamentos - Obter Lista",
         Active: true
       },
-      "Pagamentos - Criar": { Id: "Pagamentos - Criar-AUSYSY", Active: true },
-      "Vendas - Obter": { Id: "Vendas - Obter-AUSYSY", Active: true },
+      "Pagamentos - Criar": { Id: "Pagamentos - Criar", Active: true },
+      "Vendas - Obter": { Id: "Vendas - Obter", Active: true },
       "Vendas - Obter Lista": {
-        Id: "Vendas - Obter Lista-AUSYSY",
+        Id: "Vendas - Obter Lista",
         Active: true
       },
-      "Vendas - Criar": { Id: "Vendas - Criar-AUSYSY", Active: true },
+      "Vendas - Criar": { Id: "Vendas - Criar", Active: true },
       "Vendas - Obter Certificado": {
-        Id: "Vendas - Obter Certificado-AUSYSY",
+        Id: "Vendas - Obter Certificado",
         Active: true
       },
       "Vendas - Envio de certificado": {
-        Id: "Vendas - Envio de certificado-AUSYSY",
+        Id: "Vendas - Envio de certificado",
         Active: true
       }
     }
@@ -410,101 +410,101 @@ export default [
     Abbr: "A1",
     Users: [],
     Actions: {
-      "Produtos - Obter": { Id: "Produtos - Obter-AUSYSY", Active: true },
+      "Produtos - Obter": { Id: "Produtos - Obter", Active: true },
       "Produtos - Obter Lista": {
-        Id: "Produtos - Obter Lista-AUSYSY",
+        Id: "Produtos - Obter Lista",
         Active: true
       },
-      "Produtos - Criar": { Id: "Produtos - Criar-AUSYSY", Active: true },
+      "Produtos - Criar": { Id: "Produtos - Criar", Active: true },
       "Produtos - Adicionar Imagem": {
-        Id: "Produtos - Adicionar Imagem-AUSYSY",
+        Id: "Produtos - Adicionar Imagem",
         Active: true
       },
       "Produtos - Remover Imagem": {
-        Id: "Produtos - Remover Imagem-AUSYSY",
+        Id: "Produtos - Remover Imagem",
         Active: true
       },
       "Produtos - Obter Configuração": {
-        Id: "Produtos - Obter Configuração-AUSYSY",
+        Id: "Produtos - Obter Configuração",
         Active: true
       },
       "Produtos - Atualizar configuração": {
-        Id: "Produtos - Atualizar configuração-AUSYSY",
+        Id: "Produtos - Atualizar configuração",
         Active: true
       },
       "Produtos - Testar certificado": {
-        Id: "Produtos - Testar certificado-AUSYSY",
+        Id: "Produtos - Testar certificado",
         Active: true
       },
       "Produtos - Testar comunicação": {
-        Id: "Produtos - Testar comunicação-AUSYSY",
+        Id: "Produtos - Testar comunicação",
         Active: true
       },
       "Produtos - Descontinuar": {
-        Id: "Produtos - Descontinuar-AUSYSY",
+        Id: "Produtos - Descontinuar",
         Active: true
       },
-      "Produtos - Publicar": { Id: "Produtos - Publicar-AUSYSY", Active: true },
-      "Tags - Obter": { Id: "Tags - Obter-AUSYSY", Active: true },
-      "Tags - Obter Lista": { Id: "Tags - Obter Lista-AUSYSY", Active: true },
-      "Publicações - Obter": { Id: "Publicações - Obter-AUSYSY", Active: true },
+      "Produtos - Publicar": { Id: "Produtos - Publicar", Active: true },
+      "Tags - Obter": { Id: "Tags - Obter", Active: true },
+      "Tags - Obter Lista": { Id: "Tags - Obter Lista", Active: true },
+      "Publicações - Obter": { Id: "Publicações - Obter", Active: true },
       "Publicações - Obter Lista": {
-        Id: "Publicações - Obter Lista-AUSYSY",
+        Id: "Publicações - Obter Lista",
         Active: true
       },
-      "Publicações - Criar": { Id: "Publicações - Criar-AUSYSY", Active: true },
-      "Cliente - Obter": { Id: "Cliente - Obter-AUSYSY", Active: true },
+      "Publicações - Criar": { Id: "Publicações - Criar", Active: true },
+      "Cliente - Obter": { Id: "Cliente - Obter", Active: true },
       "Cliente - Obter Lista": {
-        Id: "Cliente - Obter Lista-AUSYSY",
+        Id: "Cliente - Obter Lista",
         Active: true
       },
-      "Cliente - Criar": { Id: "Cliente - Criar-AUSYSY", Active: true },
-      "Cliente - Atualizar": { Id: "Cliente - Atualizar-AUSYSY", Active: true },
-      "Endereços - Obter": { Id: "Endereços - Obter-AUSYSY", Active: true },
+      "Cliente - Criar": { Id: "Cliente - Criar", Active: true },
+      "Cliente - Atualizar": { Id: "Cliente - Atualizar", Active: true },
+      "Endereços - Obter": { Id: "Endereços - Obter", Active: true },
       "Endereços - Obter Lista": {
-        Id: "Endereços - Obter Lista-AUSYSY",
+        Id: "Endereços - Obter Lista",
         Active: true
       },
-      "Endereços - Criar": { Id: "Endereços - Criar-AUSYSY", Active: true },
+      "Endereços - Criar": { Id: "Endereços - Criar", Active: true },
       "Endereços - Atualizar": {
-        Id: "Endereços - Atualizar-AUSYSY",
+        Id: "Endereços - Atualizar",
         Active: true
       },
-      "Endereços - Excluir": { Id: "Endereços - Excluir-AUSYSY", Active: true },
+      "Endereços - Excluir": { Id: "Endereços - Excluir", Active: true },
       "Comunicações - Obter": {
-        Id: "Comunicações - Obter-AUSYSY",
+        Id: "Comunicações - Obter",
         Active: true
       },
       "Comunicações - Obter Lista": {
-        Id: "Comunicações - Obter Lista-AUSYSY",
+        Id: "Comunicações - Obter Lista",
         Active: true
       },
       "Comunicações - Criar": {
-        Id: "Comunicações - Criar-AUSYSY",
+        Id: "Comunicações - Criar",
         Active: true
       },
       "Comunicações - Obter Lista de Variáveis": {
-        Id: "Comunicações - Obter Lista de Variáveis-AUSYSY",
+        Id: "Comunicações - Obter Lista de Variáveis",
         Active: true
       },
-      "Pagamentos - Obter": { Id: "Pagamentos - Obter-AUSYSY", Active: true },
+      "Pagamentos - Obter": { Id: "Pagamentos - Obter", Active: true },
       "Pagamentos - Obter Lista": {
-        Id: "Pagamentos - Obter Lista-AUSYSY",
+        Id: "Pagamentos - Obter Lista",
         Active: true
       },
-      "Pagamentos - Criar": { Id: "Pagamentos - Criar-AUSYSY", Active: true },
-      "Vendas - Obter": { Id: "Vendas - Obter-AUSYSY", Active: true },
+      "Pagamentos - Criar": { Id: "Pagamentos - Criar", Active: true },
+      "Vendas - Obter": { Id: "Vendas - Obter", Active: true },
       "Vendas - Obter Lista": {
-        Id: "Vendas - Obter Lista-AUSYSY",
+        Id: "Vendas - Obter Lista",
         Active: true
       },
-      "Vendas - Criar": { Id: "Vendas - Criar-AUSYSY", Active: true },
+      "Vendas - Criar": { Id: "Vendas - Criar", Active: true },
       "Vendas - Obter Certificado": {
-        Id: "Vendas - Obter Certificado-AUSYSY",
+        Id: "Vendas - Obter Certificado",
         Active: true
       },
       "Vendas - Envio de certificado": {
-        Id: "Vendas - Envio de certificado-AUSYSY",
+        Id: "Vendas - Envio de certificado",
         Active: true
       }
     }
@@ -515,104 +515,104 @@ export default [
     Abbr: "A3",
     Users: [],
     Actions: {
-      "Produtos - Obter": { Id: "Produtos - Obter-AUSYSY", Active: true },
+      "Produtos - Obter": { Id: "Produtos - Obter", Active: true },
       "Produtos - Obter Lista": {
-        Id: "Produtos - Obter Lista-AUSYSY",
+        Id: "Produtos - Obter Lista",
         Active: true
       },
-      "Produtos - Criar": { Id: "Produtos - Criar-AUSYSY", Active: true },
+      "Produtos - Criar": { Id: "Produtos - Criar", Active: true },
       "Produtos - Adicionar Imagem": {
-        Id: "Produtos - Adicionar Imagem-AUSYSY",
+        Id: "Produtos - Adicionar Imagem",
         Active: true
       },
       "Produtos - Remover Imagem": {
-        Id: "Produtos - Remover Imagem-AUSYSY",
+        Id: "Produtos - Remover Imagem",
         Active: false
       },
       "Produtos - Obter Configuração": {
-        Id: "Produtos - Obter Configuração-AUSYSY",
+        Id: "Produtos - Obter Configuração",
         Active: false
       },
       "Produtos - Atualizar configuração": {
-        Id: "Produtos - Atualizar configuração-AUSYSY",
+        Id: "Produtos - Atualizar configuração",
         Active: false
       },
       "Produtos - Testar certificado": {
-        Id: "Produtos - Testar certificado-AUSYSY",
+        Id: "Produtos - Testar certificado",
         Active: true
       },
       "Produtos - Testar comunicação": {
-        Id: "Produtos - Testar comunicação-AUSYSY",
+        Id: "Produtos - Testar comunicação",
         Active: false
       },
       "Produtos - Descontinuar": {
-        Id: "Produtos - Descontinuar-AUSYSY",
+        Id: "Produtos - Descontinuar",
         Active: true
       },
-      "Produtos - Publicar": { Id: "Produtos - Publicar-AUSYSY", Active: true },
-      "Tags - Obter": { Id: "Tags - Obter-AUSYSY", Active: true },
-      "Tags - Obter Lista": { Id: "Tags - Obter Lista-AUSYSY", Active: true },
-      "Publicações - Obter": { Id: "Publicações - Obter-AUSYSY", Active: true },
+      "Produtos - Publicar": { Id: "Produtos - Publicar", Active: true },
+      "Tags - Obter": { Id: "Tags - Obter", Active: true },
+      "Tags - Obter Lista": { Id: "Tags - Obter Lista", Active: true },
+      "Publicações - Obter": { Id: "Publicações - Obter", Active: true },
       "Publicações - Obter Lista": {
-        Id: "Publicações - Obter Lista-AUSYSY",
+        Id: "Publicações - Obter Lista",
         Active: false
       },
       "Publicações - Criar": {
-        Id: "Publicações - Criar-AUSYSY",
+        Id: "Publicações - Criar",
         Active: false
       },
-      "Cliente - Obter": { Id: "Cliente - Obter-AUSYSY", Active: false },
+      "Cliente - Obter": { Id: "Cliente - Obter", Active: false },
       "Cliente - Obter Lista": {
-        Id: "Cliente - Obter Lista-AUSYSY",
+        Id: "Cliente - Obter Lista",
         Active: true
       },
-      "Cliente - Criar": { Id: "Cliente - Criar-AUSYSY", Active: true },
-      "Cliente - Atualizar": { Id: "Cliente - Atualizar-AUSYSY", Active: true },
-      "Endereços - Obter": { Id: "Endereços - Obter-AUSYSY", Active: true },
+      "Cliente - Criar": { Id: "Cliente - Criar", Active: true },
+      "Cliente - Atualizar": { Id: "Cliente - Atualizar", Active: true },
+      "Endereços - Obter": { Id: "Endereços - Obter", Active: true },
       "Endereços - Obter Lista": {
-        Id: "Endereços - Obter Lista-AUSYSY",
+        Id: "Endereços - Obter Lista",
         Active: false
       },
-      "Endereços - Criar": { Id: "Endereços - Criar-AUSYSY", Active: true },
+      "Endereços - Criar": { Id: "Endereços - Criar", Active: true },
       "Endereços - Atualizar": {
-        Id: "Endereços - Atualizar-AUSYSY",
+        Id: "Endereços - Atualizar",
         Active: true
       },
-      "Endereços - Excluir": { Id: "Endereços - Excluir-AUSYSY", Active: true },
+      "Endereços - Excluir": { Id: "Endereços - Excluir", Active: true },
       "Comunicações - Obter": {
-        Id: "Comunicações - Obter-AUSYSY",
+        Id: "Comunicações - Obter",
         Active: false
       },
       "Comunicações - Obter Lista": {
-        Id: "Comunicações - Obter Lista-AUSYSY",
+        Id: "Comunicações - Obter Lista",
         Active: true
       },
       "Comunicações - Criar": {
-        Id: "Comunicações - Criar-AUSYSY",
+        Id: "Comunicações - Criar",
         Active: false
       },
       "Comunicações - Obter Lista de Variáveis": {
-        Id: "Comunicações - Obter Lista de Variáveis-AUSYSY",
+        Id: "Comunicações - Obter Lista de Variáveis",
         Active: true
       },
-      "Pagamentos - Obter": { Id: "Pagamentos - Obter-AUSYSY", Active: true },
+      "Pagamentos - Obter": { Id: "Pagamentos - Obter", Active: true },
       "Pagamentos - Obter Lista": {
-        Id: "Pagamentos - Obter Lista-AUSYSY",
+        Id: "Pagamentos - Obter Lista",
         Active: false
       },
-      "Pagamentos - Criar": { Id: "Pagamentos - Criar-AUSYSY", Active: false },
-      "Vendas - Obter": { Id: "Vendas - Obter-AUSYSY", Active: false },
+      "Pagamentos - Criar": { Id: "Pagamentos - Criar", Active: false },
+      "Vendas - Obter": { Id: "Vendas - Obter", Active: false },
       "Vendas - Obter Lista": {
-        Id: "Vendas - Obter Lista-AUSYSY",
+        Id: "Vendas - Obter Lista",
         Active: true
       },
-      "Vendas - Criar": { Id: "Vendas - Criar-AUSYSY", Active: true },
+      "Vendas - Criar": { Id: "Vendas - Criar", Active: true },
       "Vendas - Obter Certificado": {
-        Id: "Vendas - Obter Certificado-AUSYSY",
+        Id: "Vendas - Obter Certificado",
         Active: true
       },
       "Vendas - Envio de certificado": {
-        Id: "Vendas - Envio de certificado-AUSYSY",
+        Id: "Vendas - Envio de certificado",
         Active: false
       }
     }
@@ -623,104 +623,104 @@ export default [
     Abbr: "A7",
     Users: [],
     Actions: {
-      "Produtos - Obter": { Id: "Produtos - Obter-AUSYSY", Active: false },
+      "Produtos - Obter": { Id: "Produtos - Obter", Active: false },
       "Produtos - Obter Lista": {
-        Id: "Produtos - Obter Lista-AUSYSY",
+        Id: "Produtos - Obter Lista",
         Active: false
       },
-      "Produtos - Criar": { Id: "Produtos - Criar-AUSYSY", Active: false },
+      "Produtos - Criar": { Id: "Produtos - Criar", Active: false },
       "Produtos - Adicionar Imagem": {
-        Id: "Produtos - Adicionar Imagem-AUSYSY",
+        Id: "Produtos - Adicionar Imagem",
         Active: false
       },
       "Produtos - Remover Imagem": {
-        Id: "Produtos - Remover Imagem-AUSYSY",
+        Id: "Produtos - Remover Imagem",
         Active: false
       },
       "Produtos - Obter Configuração": {
-        Id: "Produtos - Obter Configuração-AUSYSY",
+        Id: "Produtos - Obter Configuração",
         Active: false
       },
       "Produtos - Atualizar configuração": {
-        Id: "Produtos - Atualizar configuração-AUSYSY",
+        Id: "Produtos - Atualizar configuração",
         Active: false
       },
       "Produtos - Testar certificado": {
-        Id: "Produtos - Testar certificado-AUSYSY",
+        Id: "Produtos - Testar certificado",
         Active: false
       },
       "Produtos - Testar comunicação": {
-        Id: "Produtos - Testar comunicação-AUSYSY",
+        Id: "Produtos - Testar comunicação",
         Active: false
       },
       "Produtos - Descontinuar": {
-        Id: "Produtos - Descontinuar-AUSYSY",
+        Id: "Produtos - Descontinuar",
         Active: false
       },
-      "Produtos - Publicar": { Id: "Produtos - Publicar-AUSYSY", Active: true },
-      "Tags - Obter": { Id: "Tags - Obter-AUSYSY", Active: true },
-      "Tags - Obter Lista": { Id: "Tags - Obter Lista-AUSYSY", Active: true },
-      "Publicações - Obter": { Id: "Publicações - Obter-AUSYSY", Active: true },
+      "Produtos - Publicar": { Id: "Produtos - Publicar", Active: true },
+      "Tags - Obter": { Id: "Tags - Obter", Active: true },
+      "Tags - Obter Lista": { Id: "Tags - Obter Lista", Active: true },
+      "Publicações - Obter": { Id: "Publicações - Obter", Active: true },
       "Publicações - Obter Lista": {
-        Id: "Publicações - Obter Lista-AUSYSY",
+        Id: "Publicações - Obter Lista",
         Active: true
       },
-      "Publicações - Criar": { Id: "Publicações - Criar-AUSYSY", Active: true },
-      "Cliente - Obter": { Id: "Cliente - Obter-AUSYSY", Active: true },
+      "Publicações - Criar": { Id: "Publicações - Criar", Active: true },
+      "Cliente - Obter": { Id: "Cliente - Obter", Active: true },
       "Cliente - Obter Lista": {
-        Id: "Cliente - Obter Lista-AUSYSY",
+        Id: "Cliente - Obter Lista",
         Active: true
       },
-      "Cliente - Criar": { Id: "Cliente - Criar-AUSYSY", Active: false },
+      "Cliente - Criar": { Id: "Cliente - Criar", Active: false },
       "Cliente - Atualizar": {
-        Id: "Cliente - Atualizar-AUSYSY",
+        Id: "Cliente - Atualizar",
         Active: false
       },
-      "Endereços - Obter": { Id: "Endereços - Obter-AUSYSY", Active: false },
+      "Endereços - Obter": { Id: "Endereços - Obter", Active: false },
       "Endereços - Obter Lista": {
-        Id: "Endereços - Obter Lista-AUSYSY",
+        Id: "Endereços - Obter Lista",
         Active: false
       },
-      "Endereços - Criar": { Id: "Endereços - Criar-AUSYSY", Active: true },
+      "Endereços - Criar": { Id: "Endereços - Criar", Active: true },
       "Endereços - Atualizar": {
-        Id: "Endereços - Atualizar-AUSYSY",
+        Id: "Endereços - Atualizar",
         Active: true
       },
-      "Endereços - Excluir": { Id: "Endereços - Excluir-AUSYSY", Active: true },
+      "Endereços - Excluir": { Id: "Endereços - Excluir", Active: true },
       "Comunicações - Obter": {
-        Id: "Comunicações - Obter-AUSYSY",
+        Id: "Comunicações - Obter",
         Active: true
       },
       "Comunicações - Obter Lista": {
-        Id: "Comunicações - Obter Lista-AUSYSY",
+        Id: "Comunicações - Obter Lista",
         Active: true
       },
       "Comunicações - Criar": {
-        Id: "Comunicações - Criar-AUSYSY",
+        Id: "Comunicações - Criar",
         Active: true
       },
       "Comunicações - Obter Lista de Variáveis": {
-        Id: "Comunicações - Obter Lista de Variáveis-AUSYSY",
+        Id: "Comunicações - Obter Lista de Variáveis",
         Active: false
       },
-      "Pagamentos - Obter": { Id: "Pagamentos - Obter-AUSYSY", Active: false },
+      "Pagamentos - Obter": { Id: "Pagamentos - Obter", Active: false },
       "Pagamentos - Obter Lista": {
-        Id: "Pagamentos - Obter Lista-AUSYSY",
+        Id: "Pagamentos - Obter Lista",
         Active: false
       },
-      "Pagamentos - Criar": { Id: "Pagamentos - Criar-AUSYSY", Active: true },
-      "Vendas - Obter": { Id: "Vendas - Obter-AUSYSY", Active: true },
+      "Pagamentos - Criar": { Id: "Pagamentos - Criar", Active: true },
+      "Vendas - Obter": { Id: "Vendas - Obter", Active: true },
       "Vendas - Obter Lista": {
-        Id: "Vendas - Obter Lista-AUSYSY",
+        Id: "Vendas - Obter Lista",
         Active: true
       },
-      "Vendas - Criar": { Id: "Vendas - Criar-AUSYSY", Active: true },
+      "Vendas - Criar": { Id: "Vendas - Criar", Active: true },
       "Vendas - Obter Certificado": {
-        Id: "Vendas - Obter Certificado-AUSYSY",
+        Id: "Vendas - Obter Certificado",
         Active: false
       },
       "Vendas - Envio de certificado": {
-        Id: "Vendas - Envio de certificado-AUSYSY",
+        Id: "Vendas - Envio de certificado",
         Active: false
       }
     }
@@ -731,101 +731,101 @@ export default [
     Abbr: "A8",
     Users: [],
     Actions: {
-      "Produtos - Obter": { Id: "Produtos - Obter-AUSYSY", Active: false },
+      "Produtos - Obter": { Id: "Produtos - Obter", Active: false },
       "Produtos - Obter Lista": {
-        Id: "Produtos - Obter Lista-AUSYSY",
+        Id: "Produtos - Obter Lista",
         Active: false
       },
-      "Produtos - Criar": { Id: "Produtos - Criar-AUSYSY", Active: false },
+      "Produtos - Criar": { Id: "Produtos - Criar", Active: false },
       "Produtos - Adicionar Imagem": {
-        Id: "Produtos - Adicionar Imagem-AUSYSY",
+        Id: "Produtos - Adicionar Imagem",
         Active: false
       },
       "Produtos - Remover Imagem": {
-        Id: "Produtos - Remover Imagem-AUSYSY",
+        Id: "Produtos - Remover Imagem",
         Active: true
       },
       "Produtos - Obter Configuração": {
-        Id: "Produtos - Obter Configuração-AUSYSY",
+        Id: "Produtos - Obter Configuração",
         Active: true
       },
       "Produtos - Atualizar configuração": {
-        Id: "Produtos - Atualizar configuração-AUSYSY",
+        Id: "Produtos - Atualizar configuração",
         Active: false
       },
       "Produtos - Testar certificado": {
-        Id: "Produtos - Testar certificado-AUSYSY",
+        Id: "Produtos - Testar certificado",
         Active: true
       },
       "Produtos - Testar comunicação": {
-        Id: "Produtos - Testar comunicação-AUSYSY",
+        Id: "Produtos - Testar comunicação",
         Active: true
       },
       "Produtos - Descontinuar": {
-        Id: "Produtos - Descontinuar-AUSYSY",
+        Id: "Produtos - Descontinuar",
         Active: false
       },
-      "Produtos - Publicar": { Id: "Produtos - Publicar-AUSYSY", Active: true },
-      "Tags - Obter": { Id: "Tags - Obter-AUSYSY", Active: true },
-      "Tags - Obter Lista": { Id: "Tags - Obter Lista-AUSYSY", Active: true },
-      "Publicações - Obter": { Id: "Publicações - Obter-AUSYSY", Active: true },
+      "Produtos - Publicar": { Id: "Produtos - Publicar", Active: true },
+      "Tags - Obter": { Id: "Tags - Obter", Active: true },
+      "Tags - Obter Lista": { Id: "Tags - Obter Lista", Active: true },
+      "Publicações - Obter": { Id: "Publicações - Obter", Active: true },
       "Publicações - Obter Lista": {
-        Id: "Publicações - Obter Lista-AUSYSY",
+        Id: "Publicações - Obter Lista",
         Active: true
       },
-      "Publicações - Criar": { Id: "Publicações - Criar-AUSYSY", Active: true },
-      "Cliente - Obter": { Id: "Cliente - Obter-AUSYSY", Active: true },
+      "Publicações - Criar": { Id: "Publicações - Criar", Active: true },
+      "Cliente - Obter": { Id: "Cliente - Obter", Active: true },
       "Cliente - Obter Lista": {
-        Id: "Cliente - Obter Lista-AUSYSY",
+        Id: "Cliente - Obter Lista",
         Active: true
       },
-      "Cliente - Criar": { Id: "Cliente - Criar-AUSYSY", Active: true },
-      "Cliente - Atualizar": { Id: "Cliente - Atualizar-AUSYSY", Active: true },
-      "Endereços - Obter": { Id: "Endereços - Obter-AUSYSY", Active: true },
+      "Cliente - Criar": { Id: "Cliente - Criar", Active: true },
+      "Cliente - Atualizar": { Id: "Cliente - Atualizar", Active: true },
+      "Endereços - Obter": { Id: "Endereços - Obter", Active: true },
       "Endereços - Obter Lista": {
-        Id: "Endereços - Obter Lista-AUSYSY",
+        Id: "Endereços - Obter Lista",
         Active: false
       },
-      "Endereços - Criar": { Id: "Endereços - Criar-AUSYSY", Active: false },
+      "Endereços - Criar": { Id: "Endereços - Criar", Active: false },
       "Endereços - Atualizar": {
-        Id: "Endereços - Atualizar-AUSYSY",
+        Id: "Endereços - Atualizar",
         Active: false
       },
-      "Endereços - Excluir": { Id: "Endereços - Excluir-AUSYSY", Active: true },
+      "Endereços - Excluir": { Id: "Endereços - Excluir", Active: true },
       "Comunicações - Obter": {
-        Id: "Comunicações - Obter-AUSYSY",
+        Id: "Comunicações - Obter",
         Active: true
       },
       "Comunicações - Obter Lista": {
-        Id: "Comunicações - Obter Lista-AUSYSY",
+        Id: "Comunicações - Obter Lista",
         Active: true
       },
       "Comunicações - Criar": {
-        Id: "Comunicações - Criar-AUSYSY",
+        Id: "Comunicações - Criar",
         Active: true
       },
       "Comunicações - Obter Lista de Variáveis": {
-        Id: "Comunicações - Obter Lista de Variáveis-AUSYSY",
+        Id: "Comunicações - Obter Lista de Variáveis",
         Active: false
       },
-      "Pagamentos - Obter": { Id: "Pagamentos - Obter-AUSYSY", Active: false },
+      "Pagamentos - Obter": { Id: "Pagamentos - Obter", Active: false },
       "Pagamentos - Obter Lista": {
-        Id: "Pagamentos - Obter Lista-AUSYSY",
+        Id: "Pagamentos - Obter Lista",
         Active: false
       },
-      "Pagamentos - Criar": { Id: "Pagamentos - Criar-AUSYSY", Active: false },
-      "Vendas - Obter": { Id: "Vendas - Obter-AUSYSY", Active: false },
+      "Pagamentos - Criar": { Id: "Pagamentos - Criar", Active: false },
+      "Vendas - Obter": { Id: "Vendas - Obter", Active: false },
       "Vendas - Obter Lista": {
-        Id: "Vendas - Obter Lista-AUSYSY",
+        Id: "Vendas - Obter Lista",
         Active: true
       },
-      "Vendas - Criar": { Id: "Vendas - Criar-AUSYSY", Active: true },
+      "Vendas - Criar": { Id: "Vendas - Criar", Active: true },
       "Vendas - Obter Certificado": {
-        Id: "Vendas - Obter Certificado-AUSYSY",
+        Id: "Vendas - Obter Certificado",
         Active: true
       },
       "Vendas - Envio de certificado": {
-        Id: "Vendas - Envio de certificado-AUSYSY",
+        Id: "Vendas - Envio de certificado",
         Active: true
       }
     }

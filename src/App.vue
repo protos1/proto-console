@@ -206,6 +206,13 @@
           :activeAccount="activeAccount"
           :activeApp="activeApp"
         />
+
+        <edit-account
+          v-if="activePage === 'edit-account'"
+          :setActivePage="setActivePage"
+          :activeAccount="activeAccount"
+          :activeApp="activeApp"
+        />
       </md-app-content>
     </md-app>
   </div>
@@ -225,6 +232,7 @@ import EditUserToApp from "./pages/EditUserToApp/index";
 import ManageUserProfile from "./pages/ManageUserProfile/index";
 import CreateProfile from "./pages/CreateProfile/index";
 import EditProfile from "./pages/EditProfile/index";
+import EditAccount from "./pages/EditAccount/index";
 import Profiles from "./data/_profiles.js";
 
 export default {
@@ -246,6 +254,7 @@ export default {
     CreateUser,
     CreateAccount,
     EditUser,
+    EditAccount,
     CreateUserToApp,
     EditUserToApp,
     ManageUserProfile,
